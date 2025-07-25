@@ -6,7 +6,6 @@ import pickle
 from pathlib import Path
 import numpy as np
 from flask import Flask, request, jsonify
-from api import lambda_handler
 from flask_cors import CORS
 
 # CNN Module Block
