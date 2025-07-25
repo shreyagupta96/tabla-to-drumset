@@ -20,5 +20,5 @@ ENV PATH /opt/conda/envs/ML312/bin:$PATH
 COPY . .
 
 # Default command
-CMD ["python", "api_2.py"]
+CMD ["python", "api.py"]
 

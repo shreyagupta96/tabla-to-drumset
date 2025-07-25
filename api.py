@@ -5,7 +5,9 @@ import librosa
 import pickle
 from pathlib import Path
 import numpy as np
-MODEL_BUCKET = 'MODEL_BUCKET'
+from flask import Flask, request, jsonify
+from api import lambda_handler
+from flask_cors import CORS
 
 # CNN Module Block
 class ConvBlock(torch.nn.Module):
@@ -166,18 +168,73 @@ def predict_tabla_bols(
         print(f"Stroke {i+1}: Predicted → {predicted_bol} (dB: {stroke_db:.2f})")
     return results, duration
 
-def lambda_handler(file):
-    # load
-    with open('model.pkl', 'rb') as f:
-        model = pickle.load(f)
+def preprocess_generate (predicted_notes, durations):
+    merge_list = []
+    for i in range(len(predicted_notes)):
+        merge_list.append(note_labels.index(predicted_notes[i]))
+        merge_list.append(durations[i])
+    return merge_list[len(merge_list) - 6:], len(predicted_notes)
 
-    with open('model_2.pkl', 'rb') as f:
-        model_2 = pickle.load(f)
-    model_path = "ConvNet_SNFPR_model.pth"  # Enclose the filename in quotes
-    model_CNN = ConvNet(input_channels=13, num_classes=12)  # Ensure input_channels and num_classes match your model
-    model_CNN.load_state_dict(torch.load(model_path))
+def generate_notes (predicted_normalised, durations):
+    predicted_notes = []
+    predicted_duration = []
+    x_test_sample, x_test_length = preprocess_generate(predicted_notes=predicted_normalised, durations=durations)
+    for i in range(0,x_test_length):
+        pred_note = model.predict([x_test_sample])
+        pred_duration = model_2.predict([x_test_sample])
+        print(note_labels[pred_note[0]], pred_duration[0])
+        predicted_notes.append(note_labels[pred_note[0]])
+        predicted_duration.append(pred_duration[0])
+        x_test_sample = x_test_sample[2:]
+        x_test_sample.append(pred_note[0])
+        x_test_sample.append(pred_duration[0])
+    return predicted_notes, predicted_duration
+
+def lambda_handler(file):
     predicted_normalised, durations = predict_tabla_bols(file_path=file,
                                                          model=model_CNN, adjust_length_fn=Adjust_Length,
                                                          target_length=72000)
     return predicted_normalised, durations
+
+
+app = Flask(__name__)
+CORS(app)
+
+@app.route('/health', methods=['GET'])
+def health():
+    return jsonify({'status': 'ok'})
+
+@app.route('/classify', methods=['GET', 'POST'])
+def classify():
+    if request.method == 'POST':
+        if 'file' not in request.files:
+            return {'error': 'No file part'}, 400
+        file = request.files['file']
+        predicted_normalised, durations = lambda_handler(file)
+        # Fetch user logic here
+        return jsonify({'notes': predicted_normalised, 'duration': durations})
+
+@app.route('/nextgen', methods=['GET', 'POST'])
+def nextgen():
+    if request.method == 'POST':
+        if 'file' not in request.files:
+            return {'error': 'No file part'}, 400
+        file = request.files['file']
+        predicted_normalised, durations = lambda_handler(file)
+        next_gen_notes, next_gen_duration = generate_notes (predicted_normalised, durations)
+        # Fetch user logic here
+        return jsonify({'notes': next_gen_notes, 'duration': next_gen_duration})
+
+with open('model.pkl', 'rb') as f:
+    model = pickle.load(f)
+
+with open('model_2.pkl', 'rb') as f:
+    model_2 = pickle.load(f)
+
+model_path = "ConvNet_SNFPR_model.pth"  # Enclose the filename in quotes
+model_CNN = ConvNet(input_channels=13, num_classes=12)  # Ensure input_channels and num_classes match your model
+model_CNN.load_state_dict(torch.load(model_path))
+
+app.run(host="0.0.0.0", port=5010)
+
 
