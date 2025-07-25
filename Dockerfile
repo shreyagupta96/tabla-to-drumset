@@ -30,9 +30,9 @@ RUN mkdir -p ./static && \
 RUN chmod -R 755 ./static
 
 # Create non-root user for security
-RUN adduser --disabled-password --gecos '' appuser
-RUN chown -R appuser:appuser /app
-USER appuser
+# RUN adduser --disabled-password --gecos '' appuser
+# RUN chown -R appuser:appuser /app
+# USER appuser
 
 # Expose port 5010
 EXPOSE 5010
