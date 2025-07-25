@@ -1,24 +1,47 @@
-# Use Miniconda as base image
-FROM continuumio/miniconda3
+# Multi-stage Docker build for frontend + backend
+FROM python:3.9-slim
 
 # Set working directory
 WORKDIR /app
 
-# Copy environment file
-COPY environment.yml .
+# Install system dependencies
+RUN apt-get update && apt-get install -y \
+    curl \
+    && rm -rf /var/lib/apt/lists/*
 
-# Create the environment
-RUN conda env create -f environment.yml
+# Copy backend requirements and install dependencies
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
 
-# Make sure environment is activated:
-SHELL ["conda", "run", "-n", "ML312", "/bin/bash", "-c"]
+# Copy backend source code
+COPY backend/ ./backend/
 
-# Set default environment
-ENV PATH /opt/conda/envs/ML312/bin:$PATH
+# Create static directory for frontend files
+RUN mkdir -p ./static
 
-# Copy your project files (optional)
-COPY . .
+# Copy frontend static files
+COPY index.html ./static/
+COPY styles.css ./static/
+COPY script.js ./static/
+COPY config.js ./static/
 
-# Default command
-CMD ["python", "api.py"]
+# Copy audio directories (create them if they don't exist)
+COPY tabla/ ./static/tabla/ 2>/dev/null || mkdir -p ./static/tabla/
+COPY drums/ ./static/drums/ 2>/dev/null || mkdir -p ./static/drums/
 
+# Create placeholder files for audio directories if they're empty
+RUN touch ./static/tabla/.gitkeep ./static/drums/.gitkeep
+
+# Set proper permissions
+RUN chmod -R 755 ./static
+
+# Create non-root user for security
+RUN adduser --disabled-password --gecos '' appuser
+RUN chown -R appuser:appuser /app
+USER appuser
+
+# Expose port 5010
+EXPOSE 5010
+
+# Start the backend server (which also serves static files)
+CMD ["python", "backend/app.py"]

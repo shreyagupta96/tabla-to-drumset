@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Upload Application</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🎵 Percussion Classifier 🎵</h1>
+            <p class="subtitle">Upload your audio files and let AI classify your percussion instruments</p>
+            <div class="instruments-row">
+                <span class="instrument" style="--delay: 0">🥁</span>
+                <span class="instrument" style="--delay: 1">🪘</span>
+                <span class="instrument" style="--delay: 2">🎺</span>
+                <span class="instrument" style="--delay: 3">🎶</span>
+                <span class="instrument" style="--delay: 4">🎵</span>
+            </div>
+        </div>
+        
+        <div class="upload-section">
+            <div class="file-input-wrapper">
+                <input type="file" id="fileInput" class="file-input" accept="audio/*,.wav,.mp3,.m4a,.flac,.ogg">
+                <button class="upload-btn" onclick="document.getElementById('fileInput').click()">
+                    🎵 Upload Audio File
+                </button>
+            </div>
+            
+            <div id="fileInfo" class="file-info" style="display: none;">
+                <div class="file-name" id="fileName"></div>
+                <div class="file-size" id="fileSize"></div>
+            </div>
+        </div>
+        
+        <div class="submit-buttons">
+            <button class="submit-btn" id="classifyTablaBtn" data-api="classify" disabled>
+                🎵 Classify Tabla Notes
+            </button>
+            <button class="submit-btn" id="nextgenTablaBtn" data-api="nextgen" disabled>
+                🔮 Generate Next Tabla Notes
+            </button>
+            <button class="submit-btn" id="convertDrumsBtn" data-api="classify" disabled>
+                🥁 Convert Tabla to Drums
+            </button>
+            <button class="submit-btn" id="generateMusicBtn" data-api="nextgen" disabled>
+                🎶 Generate Music in Drums
+            </button>
+        </div>
+        
+        <div id="statusMessage" class="status-message" style="display: none;"></div>
+        
+        <div id="playbackInfo" class="playback-info" style="display: none;">
+            <h3>🎵 Now Playing</h3>
+            <div id="currentNote" class="current-note"></div>
+            <div id="playbackProgress" class="playback-progress">
+                <div id="progressBar" class="progress-bar"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

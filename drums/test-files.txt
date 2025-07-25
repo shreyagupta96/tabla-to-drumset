@@ -1,0 +1,33 @@
+# Drums Folder - Convert Tabla to Drums & Generate Music in Drums
+
+This folder contains WAV files for drum sounds used by drum-related functionalities.
+
+## Purpose
+
+When you click these buttons, the application will look for audio files in this `drums` folder:
+- **"🥁 Convert Tabla to Drums"** - plays classification results with drum sounds
+- **"🎶 Generate Music in Drums"** - plays generated music with drum sounds
+
+## Test Audio Files Needed:
+
+For testing the mock responses, you need these WAV files:
+
+**For Classify/Convert functionality:**
+1. Tin.wav - Drum version of Tin sound
+2. Ta.wav - Drum version of Ta sound  
+3. Dhin.wav - Drum version of Dhin sound
+4. Na.wav - Drum version of Na sound
+
+**For Generate functionality (additional files needed):**
+5. Dha.wav - Drum version of Dha sound
+6. Ghe.wav - Drum version of Ghe sound
+
+## Mock Response Sequences:
+
+**Convert Tabla to Drums mock response:**
+- Tin, Tin, Ta, Dhin, Na, Dhin, Na (8 notes)
+
+**Generate Music in Drums mock response:**
+- Dha, Dha, Dhin, Ghe, Dha, Dha, Tin (7 notes)
+
+You can create simple test WAV files or use actual tabla sounds.

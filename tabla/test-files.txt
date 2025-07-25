@@ -1,0 +1,40 @@
+# Tabla Folder - Classify Tabla Notes & Generate Next Tabla Notes
+
+This folder contains WAV files for tabla sounds used by tabla-related functionalities.
+
+## Purpose
+
+When you click these buttons, the application will look for audio files in this `tabla` folder:
+- **"🎵 Classify Tabla Notes"** - plays classification results with tabla sounds
+- **"🔮 Generate Next Tabla Notes"** - plays generated notes with tabla sounds
+
+## Test Audio Files Needed:
+
+For testing the mock responses, you need these WAV files:
+
+**For Classify functionality:**
+1. Tin.wav - Traditional tabla Tin sound
+2. Ta.wav - Traditional tabla Ta sound  
+3. Dhin.wav - Traditional tabla Dhin sound
+4. Na.wav - Traditional tabla Na sound
+
+**For Generate functionality (additional files needed):**
+5. Dha.wav - Traditional tabla Dha sound
+6. Ghe.wav - Traditional tabla Ghe sound
+
+## Mock Response Sequences:
+
+**Classify Tabla Notes mock response:**
+- Tin, Tin, Ta, Dhin, Na, Dhin, Na (8 notes)
+
+**Generate Next Tabla Notes mock response:**
+- Dha, Dha, Dhin, Ghe, Dha, Dha, Tin (7 notes)
+
+You can use traditional tabla recordings or synthesized tabla sounds.
+
+## Difference from Drums Folder
+
+- **Tabla Folder**: Contains traditional tabla sounds for authentic tabla playback
+- **Drums Folder**: Contains converted drum sounds for drum-style playback
+
+This allows you to have different audio representations for the same note names!
