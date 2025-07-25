@@ -5,8 +5,9 @@ import librosa
 import pickle
 from pathlib import Path
 import numpy as np
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, send_from_directory
 from flask_cors import CORS
+
 
 # CNN Module Block
 class ConvBlock(torch.nn.Module):
@@ -203,6 +204,16 @@ CORS(app)
 def health():
     return jsonify({'status': 'ok'})
 
+
+@app.route('/')
+def serve_index():
+    return send_from_directory('static', 'index.html')
+
+
+@app.route('/<path:filename>')
+def serve_static(filename):
+    return send_from_directory('static', filename)
+
 @app.route('/classify', methods=['GET', 'POST'])
 def classify():
     if request.method == 'POST':
@@ -223,6 +234,7 @@ def nextgen():
         next_gen_notes, next_gen_duration = generate_notes (predicted_normalised, durations)
         # Fetch user logic here
         return jsonify({'notes': next_gen_notes, 'duration': next_gen_duration})
+
 
 with open('model.pkl', 'rb') as f:
     model = pickle.load(f)

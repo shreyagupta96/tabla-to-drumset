@@ -20,14 +20,15 @@ ENV PATH /opt/conda/envs/ML312/bin:$PATH
 COPY . .
 
 # Create static directory and copy frontend files
-RUN mkdir -p ./static && \
-    cp index.html styles.css script.js config.js ./static/ && \
-    mkdir -p ./static/tabla ./static/drums && \
-    cp -r tabla/* ./static/tabla/ 2>/dev/null || true && \
-    cp -r drums/* ./static/drums/ 2>/dev/null || true
+RUN mkdir -p ./static ./static/tabla ./static/drums
 
-# Set proper permissions
+COPY index.html styles.css script.js config.js ./static/
+COPY tabla/ ./static/tabla/
+COPY drums/ ./static/drums/
+
+# Set permissions
 RUN chmod -R 755 ./static
+
 
 # Create non-root user for security
 # RUN adduser --disabled-password --gecos '' appuser
@@ -38,4 +39,4 @@ RUN chmod -R 755 ./static
 EXPOSE 5010
 
 # Start the backend server (which also serves static files)
-CMD ["conda", "run", "-n", "ML312", "python", "api.py"]
+CMD ["python", "api.py"]
