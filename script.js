@@ -124,20 +124,28 @@ async function processFiles(files, apiEndpoint, buttonText, buttonId) {
             await playNotesSequence(result.duration, result.notes, soundFolder);
             
             showStatusMessage(
-                `${buttonText} completed successfully! Notes played.`, 
+                `${buttonText} completed successfully! Notes played. You can perform other operations on the same file.`, 
                 'success'
             );
+            
+            // Re-enable all submit buttons for additional operations
+            setTimeout(() => {
+                submitButtons.forEach(btn => btn.disabled = false);
+            }, 500);
         } else {
             showStatusMessage(
-                `${buttonText} completed successfully! Check console for results.`, 
+                `${buttonText} completed successfully! Check console for results. You can perform other operations on the same file.`, 
                 'success'
             );
+            
+            // Re-enable all submit buttons for additional operations
+            setTimeout(() => {
+                submitButtons.forEach(btn => btn.disabled = false);
+            }, 500);
         }
         
-        // Reset the form after successful processing
-        setTimeout(() => {
-            resetForm();
-        }, 3000);
+        // Keep the file for additional operations
+        // File will only be cleared when a new file is uploaded
         
     } catch (error) {
         console.error('Error processing files:', error);
@@ -175,6 +183,15 @@ function resetForm() {
     hideFileInfo();
     submitButtons.forEach(btn => btn.disabled = true);
     hideStatusMessage();
+}
+
+// Clear current file and allow new upload
+function clearCurrentFile() {
+    resetForm();
+    showStatusMessage('File cleared. You can now upload a new file.', 'success');
+    setTimeout(() => {
+        hideStatusMessage();
+    }, 2000);
 }
 
 // Handle drag and drop functionality
