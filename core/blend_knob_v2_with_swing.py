@@ -127,7 +127,7 @@ def Adjust_Length(audio_data, target_length):
 def classify_input(file_path, cnn_model, db_threshold=-30, pre_onset_samples=1000):
     """
     Stage 1: Classify input tabla file
-    Returns: notes, durations, note_onset_samples (matching notes), sr
+    Returns: notes, durations, note_onset_samples (matching notes), velocities, sr
     """
     print("\n" + "="*80)
     print("STAGE 1: INPUT ANALYSIS")
@@ -143,6 +143,7 @@ def classify_input(file_path, cnn_model, db_threshold=-30, pre_onset_samples=100
     results = []
     durations = []
     note_onset_samples = []  # Track onset for each detected note
+    velocities = []  # Track velocity (amplitude) for each note
 
     print(f"🔍 Detecting onsets and classifying...")
     for i in range(len(onset_samples) - 1):
@@ -160,6 +161,12 @@ def classify_input(file_path, cnn_model, db_threshold=-30, pre_onset_samples=100
         if stroke_db < db_threshold:
             continue
 
+        # Extract velocity (peak amplitude in the attack portion)
+        # Use first 50ms for attack detection
+        attack_samples = min(int(0.05 * sr), len(stroke))
+        attack_portion = stroke[:attack_samples]
+        peak_amplitude = np.max(np.abs(attack_portion))
+
         adjusted = Adjust_Length(stroke, 72000)
         features = preprocess(adjusted, sr)
         input_tensor = torch.tensor(features, dtype=torch.float32).unsqueeze(0)
@@ -173,12 +180,23 @@ def classify_input(file_path, cnn_model, db_threshold=-30, pre_onset_samples=100
         results.append(predicted_bol)
         durations.append(duration_sec)
         note_onset_samples.append(onset_samples[i])  # Store onset for this note
+        velocities.append(peak_amplitude)  # Store raw amplitude
+
+    # Normalize velocities to 0.3-1.0 range (avoid too quiet)
+    velocities = np.array(velocities)
+    if len(velocities) > 0 and velocities.max() > 0:
+        velocities_normalized = velocities / velocities.max()
+        # Scale to 0.3-1.0 range (minimum velocity of 0.3)
+        velocities_normalized = 0.3 + (velocities_normalized * 0.7)
+    else:
+        velocities_normalized = np.ones(len(velocities))
 
     print(f"✅ Detected {len(results)} tabla strokes")
     print(f"   Total duration: {sum(durations):.2f}s")
+    print(f"   Velocity range: {velocities_normalized.min():.2f} - {velocities_normalized.max():.2f}")
     print(f"   Notes: {' '.join(results[:20])}{'...' if len(results) > 20 else ''}")
 
-    return results, durations, np.array(note_onset_samples), sr
+    return results, durations, np.array(note_onset_samples), velocities_normalized, sr
 
 # ============================================================================
 # STAGE 2: TWO-LEVEL SWING EXTRACTION
@@ -635,9 +653,15 @@ def blend_bars_with_two_level_swing(input_bars, gen_bars_pool, leftover, blend_r
 # ============================================================================
 
 def synthesize_audio(notes, durations, folder='tabla', sample_rate=44100,
-                    crossfade_ms=5, ghost_notes=True, ghost_volume=0.3):
+                    crossfade_ms=5, ghost_notes=True, ghost_volume=0.3,
+                    use_snare_variants=True, velocities=None):
     """
-    Synthesize audio with exact onset timing
+    Synthesize audio with exact onset timing and velocity modulation
+
+    Args:
+        velocities: Array of velocity values (0.0-1.0) for each note
+        use_snare_variants: If True and folder='drums', use snare variants for
+                           Ti, Re, Ki, T, Kat, Na instead of base drum samples
     """
     if len(notes) == 0:
         return np.array([]), sample_rate
@@ -645,15 +669,33 @@ def synthesize_audio(notes, durations, folder='tabla', sample_rate=44100,
     # Calculate exact onset times from durations
     onset_times = np.insert(np.cumsum(durations), 0, 0.0)
 
+    # If no velocities provided, use uniform velocity
+    if velocities is None:
+        velocities = np.ones(len(notes))
+    else:
+        velocities = np.array(velocities)
+
+    # Define snare-mapped strokes
+    snare_strokes = ['Ti', 'Re', 'Ki', 'T', 'Kat', 'Na']
+
     # Load all samples
     samples = []
-    for note in notes:
-        audio_file = f"{folder}/{note}.wav"
+    for i, note in enumerate(notes):
+        # Check if we should use snare variant
+        if use_snare_variants and folder == 'core/drums' and note in snare_strokes:
+            audio_file = f"snare_variants/snare_{note}.wav"
+        else:
+            audio_file = f"{folder}/{note}.wav"
+
         if os.path.exists(audio_file):
             try:
                 audio_data, sr = librosa.load(audio_file, sr=sample_rate)
 
-                # Apply ghost notes
+                # Apply velocity modulation
+                velocity = velocities[i] if i < len(velocities) else 1.0
+                audio_data = audio_data * velocity
+
+                # Apply ghost notes (after velocity)
                 if ghost_notes and note == "T":
                     audio_data = audio_data * ghost_volume
 
@@ -757,12 +799,12 @@ def main():
     # Load CNN
     print("\n📦 Loading models...")
     cnn_model = ConvNet(input_channels=13, num_classes=12)
-    cnn_model.load_state_dict(torch.load("ConvNet_SNFPR_model.pth"))
+    cnn_model.load_state_dict(torch.load("core/models/ConvNet_SNFPR_model.pth"))
     cnn_model.eval()
     print("   ✅ CNN loaded")
 
     # Load Model C
-    checkpoint = torch.load("models/best_bar_aware_lstm.pth", map_location='cpu')
+    checkpoint = torch.load("core/models/best_bar_aware_lstm.pth", map_location='cpu')
     metadata = checkpoint['metadata']
 
     lstm_model, regularizer = create_model(
@@ -779,7 +821,7 @@ def main():
     print(f"   ✅ Model C loaded")
 
     # Stage 1: Classify
-    notes, durations, onset_samples, sr = classify_input(args.input_file, cnn_model)
+    notes, durations, onset_samples, velocities, sr = classify_input(args.input_file, cnn_model)
 
     # Stage 2: Detect tempo and beats
     beat_iois, beat_positions = detect_tempo_and_beats(durations, onset_samples, sr)
@@ -846,8 +888,9 @@ def main():
 
     # Stage 6: Synthesize
     print("\n🔨 Synthesizing audio...")
-    tabla_audio, sr = synthesize_audio(output_notes, output_durations, folder='tabla')
-    drums_audio, sr = synthesize_audio(output_notes, output_durations, folder='drums')
+    # Use input velocities (they will be preserved through blending)
+    tabla_audio, sr = synthesize_audio(output_notes, output_durations, folder='core/tabla', velocities=velocities)
+    drums_audio, sr = synthesize_audio(output_notes, output_durations, folder='core/drums', velocities=velocities)
 
     # Save
     tabla_file = f"{args.output_dir}/{base_name}_blend_{args.blend_ratio:.2f}_tabla.wav"
