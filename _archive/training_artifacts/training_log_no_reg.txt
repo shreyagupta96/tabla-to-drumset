@@ -1,0 +1,155 @@
+
+====================================================================================================
+                         TRAINING MODEL B: NO EMBEDDING REGULARIZATION
+====================================================================================================
+
+====================================================================================================
+                              PHASE 5: BAR-AWARE LSTM TRAINING
+====================================================================================================
+
+📂 Loading dataset from: training_data/bar_aware_dataset.pkl
+   Training sequences: 150
+   Validation sequences: 61
+
+🔧 Configuration:
+   Device: cpu
+   Batch size: 16
+   Learning rate: 0.001
+   Regularization weight: 0.0
+   Hidden size: 256
+   Num layers: 2
+   Dropout: 0.3
+   Epochs: 100
+
+🏗️  Creating model...
+   Parameters: 974,113
+
+====================================================================================================
+                                   TRAINING PROGRESS
+====================================================================================================
+
+Epoch   1/100 (1.0s) | Train Loss: 3.9042 (N:2.4387 D:1.4654 R:11.4542) | Val Loss: 3.5870 | Repeats: 18.54 | Unique: 0.080
+   ✅ Saved best model (val_loss: 3.5870)
+Epoch   2/100 (1.0s) | Train Loss: 3.8062 (N:2.3950 D:1.4112 R:11.4511) | Val Loss: 3.5003 | Repeats: 18.54 | Unique: 0.080
+   ✅ Saved best model (val_loss: 3.5003)
+Epoch   3/100 (1.1s) | Train Loss: 3.7476 (N:2.3757 D:1.3719 R:11.4525) | Val Loss: 3.5127 | Repeats: 18.54 | Unique: 0.080
+Epoch   4/100 (1.0s) | Train Loss: 3.7133 (N:2.3610 D:1.3523 R:11.4532) | Val Loss: 3.4037 | Repeats: 18.54 | Unique: 0.080
+   ✅ Saved best model (val_loss: 3.4037)
+Epoch   5/100 (1.1s) | Train Loss: 3.6379 (N:2.3260 D:1.3119 R:11.4527) | Val Loss: 3.3573 | Repeats: 18.54 | Unique: 0.080
+   ✅ Saved best model (val_loss: 3.3573)
+Epoch   6/100 (1.1s) | Train Loss: 3.5338 (N:2.2952 D:1.2386 R:11.4531) | Val Loss: 3.3007 | Repeats: 18.54 | Unique: 0.080
+   ✅ Saved best model (val_loss: 3.3007)
+Epoch   7/100 (1.0s) | Train Loss: 3.4242 (N:2.2473 D:1.1769 R:11.4563) | Val Loss: 3.2393 | Repeats: 20.43 | Unique: 0.055
+   ✅ Saved best model (val_loss: 3.2393)
+Epoch   8/100 (1.0s) | Train Loss: 3.3323 (N:2.2124 D:1.1198 R:11.4631) | Val Loss: 3.1898 | Repeats: 20.43 | Unique: 0.055
+   ✅ Saved best model (val_loss: 3.1898)
+Epoch   9/100 (1.1s) | Train Loss: 3.3192 (N:2.2067 D:1.1124 R:11.4731) | Val Loss: 3.1416 | Repeats: 20.43 | Unique: 0.055
+   ✅ Saved best model (val_loss: 3.1416)
+Epoch  10/100 (1.1s) | Train Loss: 3.2596 (N:2.1866 D:1.0731 R:11.4868) | Val Loss: 3.1381 | Repeats: 20.43 | Unique: 0.055
+   ✅ Saved best model (val_loss: 3.1381)
+Epoch  11/100 (1.0s) | Train Loss: 3.2051 (N:2.1645 D:1.0406 R:11.4949) | Val Loss: 3.1044 | Repeats: 20.00 | Unique: 0.059
+   ✅ Saved best model (val_loss: 3.1044)
+Epoch  12/100 (1.0s) | Train Loss: 3.1207 (N:2.1303 D:0.9905 R:11.5021) | Val Loss: 3.0633 | Repeats: 17.21 | Unique: 0.082
+   ✅ Saved best model (val_loss: 3.0633)
+Epoch  13/100 (1.1s) | Train Loss: 3.0807 (N:2.1165 D:0.9642 R:11.5116) | Val Loss: 3.0723 | Repeats: 18.16 | Unique: 0.070
+Epoch  14/100 (1.1s) | Train Loss: 3.0643 (N:2.1071 D:0.9572 R:11.5208) | Val Loss: 3.0796 | Repeats: 18.66 | Unique: 0.068
+Epoch  15/100 (1.1s) | Train Loss: 3.0416 (N:2.0988 D:0.9429 R:11.5237) | Val Loss: 3.0341 | Repeats: 16.74 | Unique: 0.080
+   ✅ Saved best model (val_loss: 3.0341)
+Epoch  16/100 (1.1s) | Train Loss: 3.0485 (N:2.0918 D:0.9567 R:11.5220) | Val Loss: 3.0398 | Repeats: 17.85 | Unique: 0.091
+Epoch  17/100 (1.1s) | Train Loss: 3.0372 (N:2.0856 D:0.9516 R:11.5219) | Val Loss: 3.0737 | Repeats: 16.49 | Unique: 0.083
+Epoch  18/100 (1.1s) | Train Loss: 3.0371 (N:2.0925 D:0.9446 R:11.5216) | Val Loss: 3.0527 | Repeats: 16.82 | Unique: 0.093
+Epoch  19/100 (1.0s) | Train Loss: 2.9988 (N:2.0843 D:0.9145 R:11.5196) | Val Loss: 3.0592 | Repeats: 16.54 | Unique: 0.091
+Epoch  20/100 (0.9s) | Train Loss: 3.0270 (N:2.0999 D:0.9271 R:11.5187) | Val Loss: 3.0094 | Repeats: 16.59 | Unique: 0.086
+   ✅ Saved best model (val_loss: 3.0094)
+Epoch  21/100 (1.0s) | Train Loss: 2.9876 (N:2.0772 D:0.9104 R:11.5212) | Val Loss: 3.0353 | Repeats: 17.43 | Unique: 0.077
+Epoch  22/100 (1.0s) | Train Loss: 2.9631 (N:2.0643 D:0.8988 R:11.5241) | Val Loss: 3.0841 | Repeats: 17.70 | Unique: 0.078
+Epoch  23/100 (1.0s) | Train Loss: 3.0001 (N:2.0706 D:0.9294 R:11.5313) | Val Loss: 3.0548 | Repeats: 20.28 | Unique: 0.056
+Epoch  24/100 (1.1s) | Train Loss: 3.0099 (N:2.0860 D:0.9239 R:11.5322) | Val Loss: 3.0201 | Repeats: 17.62 | Unique: 0.081
+Epoch  25/100 (1.1s) | Train Loss: 3.0050 (N:2.0925 D:0.9125 R:11.5311) | Val Loss: 3.0619 | Repeats: 17.56 | Unique: 0.081
+Epoch  26/100 (1.2s) | Train Loss: 3.0357 (N:2.1079 D:0.9278 R:11.5310) | Val Loss: 3.0663 | Repeats: 16.70 | Unique: 0.088
+Epoch  27/100 (1.1s) | Train Loss: 2.9958 (N:2.0814 D:0.9144 R:11.5295) | Val Loss: 3.0514 | Repeats: 16.64 | Unique: 0.090
+Epoch  28/100 (1.1s) | Train Loss: 3.0110 (N:2.0841 D:0.9269 R:11.5280) | Val Loss: 3.0422 | Repeats: 16.23 | Unique: 0.088
+Epoch  29/100 (1.1s) | Train Loss: 2.9555 (N:2.0586 D:0.8970 R:11.5288) | Val Loss: 3.0631 | Repeats: 15.41 | Unique: 0.088
+Epoch  30/100 (1.1s) | Train Loss: 2.9835 (N:2.0643 D:0.9192 R:11.5342) | Val Loss: 3.0570 | Repeats: 17.72 | Unique: 0.081
+Epoch  31/100 (1.1s) | Train Loss: 2.9669 (N:2.0629 D:0.9041 R:11.5391) | Val Loss: 3.1013 | Repeats: 16.52 | Unique: 0.094
+Epoch  32/100 (1.1s) | Train Loss: 2.9518 (N:2.0655 D:0.8863 R:11.5418) | Val Loss: 3.0707 | Repeats: 16.59 | Unique: 0.094
+Epoch  33/100 (1.1s) | Train Loss: 2.9498 (N:2.0644 D:0.8853 R:11.5435) | Val Loss: 3.0416 | Repeats: 17.36 | Unique: 0.084
+Epoch  34/100 (1.1s) | Train Loss: 2.9694 (N:2.0764 D:0.8930 R:11.5450) | Val Loss: 3.0304 | Repeats: 19.64 | Unique: 0.060
+Epoch  35/100 (1.1s) | Train Loss: 2.9728 (N:2.0645 D:0.9083 R:11.5434) | Val Loss: 3.0454 | Repeats: 18.95 | Unique: 0.068
+Epoch  36/100 (1.1s) | Train Loss: 2.9445 (N:2.0460 D:0.8985 R:11.5415) | Val Loss: 3.0496 | Repeats: 17.31 | Unique: 0.092
+Epoch  37/100 (1.1s) | Train Loss: 2.9601 (N:2.0749 D:0.8853 R:11.5398) | Val Loss: 3.0666 | Repeats: 16.92 | Unique: 0.098
+Epoch  38/100 (1.1s) | Train Loss: 2.9631 (N:2.0544 D:0.9087 R:11.5402) | Val Loss: 3.0502 | Repeats: 16.95 | Unique: 0.091
+Epoch  39/100 (1.0s) | Train Loss: 2.9501 (N:2.0657 D:0.8845 R:11.5409) | Val Loss: 3.0401 | Repeats: 16.98 | Unique: 0.092
+Epoch  40/100 (1.0s) | Train Loss: 2.9310 (N:2.0354 D:0.8956 R:11.5399) | Val Loss: 3.0414 | Repeats: 18.23 | Unique: 0.074
+Epoch  41/100 (1.1s) | Train Loss: 2.9525 (N:2.0520 D:0.9005 R:11.5406) | Val Loss: 3.0552 | Repeats: 18.87 | Unique: 0.067
+Epoch  42/100 (1.1s) | Train Loss: 2.9453 (N:2.0558 D:0.8895 R:11.5411) | Val Loss: 3.0720 | Repeats: 18.54 | Unique: 0.072
+Epoch  43/100 (1.1s) | Train Loss: 2.9280 (N:2.0401 D:0.8879 R:11.5412) | Val Loss: 3.0764 | Repeats: 18.74 | Unique: 0.070
+Epoch  44/100 (1.1s) | Train Loss: 2.9390 (N:2.0541 D:0.8849 R:11.5413) | Val Loss: 3.0861 | Repeats: 18.57 | Unique: 0.071
+Epoch  45/100 (1.1s) | Train Loss: 2.9761 (N:2.0713 D:0.9049 R:11.5414) | Val Loss: 3.0798 | Repeats: 18.36 | Unique: 0.074
+Epoch  46/100 (1.1s) | Train Loss: 2.9660 (N:2.0723 D:0.8937 R:11.5414) | Val Loss: 3.0848 | Repeats: 17.85 | Unique: 0.077
+Epoch  47/100 (1.1s) | Train Loss: 2.9545 (N:2.0611 D:0.8934 R:11.5414) | Val Loss: 3.0928 | Repeats: 18.20 | Unique: 0.073
+Epoch  48/100 (1.1s) | Train Loss: 2.9510 (N:2.0591 D:0.8919 R:11.5418) | Val Loss: 3.0800 | Repeats: 18.39 | Unique: 0.071
+Epoch  49/100 (1.1s) | Train Loss: 2.9519 (N:2.0557 D:0.8962 R:11.5423) | Val Loss: 3.0763 | Repeats: 18.18 | Unique: 0.075
+Epoch  50/100 (1.1s) | Train Loss: 2.9674 (N:2.0570 D:0.9104 R:11.5431) | Val Loss: 3.0715 | Repeats: 17.92 | Unique: 0.079
+Epoch  51/100 (1.0s) | Train Loss: 2.9360 (N:2.0439 D:0.8921 R:11.5441) | Val Loss: 3.0768 | Repeats: 17.80 | Unique: 0.079
+Epoch  52/100 (1.1s) | Train Loss: 2.9649 (N:2.0642 D:0.9006 R:11.5442) | Val Loss: 3.0860 | Repeats: 18.00 | Unique: 0.074
+Epoch  53/100 (1.1s) | Train Loss: 2.9557 (N:2.0679 D:0.8877 R:11.5444) | Val Loss: 3.0987 | Repeats: 17.69 | Unique: 0.078
+Epoch  54/100 (1.1s) | Train Loss: 2.9337 (N:2.0410 D:0.8927 R:11.5442) | Val Loss: 3.0997 | Repeats: 17.44 | Unique: 0.081
+Epoch  55/100 (1.0s) | Train Loss: 2.9784 (N:2.0554 D:0.9230 R:11.5444) | Val Loss: 3.0950 | Repeats: 17.49 | Unique: 0.080
+Epoch  56/100 (1.1s) | Train Loss: 2.9655 (N:2.0641 D:0.9014 R:11.5452) | Val Loss: 3.0930 | Repeats: 17.49 | Unique: 0.081
+Epoch  57/100 (1.0s) | Train Loss: 2.9197 (N:2.0473 D:0.8724 R:11.5462) | Val Loss: 3.0871 | Repeats: 17.46 | Unique: 0.080
+Epoch  58/100 (1.1s) | Train Loss: 2.9713 (N:2.0616 D:0.9097 R:11.5466) | Val Loss: 3.0821 | Repeats: 17.57 | Unique: 0.081
+Epoch  59/100 (1.2s) | Train Loss: 2.9672 (N:2.0558 D:0.9114 R:11.5470) | Val Loss: 3.0839 | Repeats: 17.79 | Unique: 0.079
+Epoch  60/100 (1.1s) | Train Loss: 2.9011 (N:2.0276 D:0.8734 R:11.5478) | Val Loss: 3.0862 | Repeats: 18.07 | Unique: 0.075
+Epoch  61/100 (1.1s) | Train Loss: 2.9526 (N:2.0526 D:0.9000 R:11.5484) | Val Loss: 3.0885 | Repeats: 17.93 | Unique: 0.076
+Epoch  62/100 (1.1s) | Train Loss: 2.9462 (N:2.0460 D:0.9001 R:11.5485) | Val Loss: 3.0921 | Repeats: 17.90 | Unique: 0.077
+Epoch  63/100 (1.1s) | Train Loss: 2.9496 (N:2.0542 D:0.8955 R:11.5488) | Val Loss: 3.0926 | Repeats: 17.80 | Unique: 0.079
+Epoch  64/100 (1.1s) | Train Loss: 2.9354 (N:2.0431 D:0.8923 R:11.5492) | Val Loss: 3.0968 | Repeats: 17.70 | Unique: 0.081
+Epoch  65/100 (1.1s) | Train Loss: 2.9272 (N:2.0468 D:0.8805 R:11.5495) | Val Loss: 3.0998 | Repeats: 17.61 | Unique: 0.082
+Epoch  66/100 (1.1s) | Train Loss: 2.9177 (N:2.0344 D:0.8833 R:11.5500) | Val Loss: 3.1012 | Repeats: 17.57 | Unique: 0.082
+Epoch  67/100 (1.1s) | Train Loss: 2.9247 (N:2.0442 D:0.8805 R:11.5504) | Val Loss: 3.0980 | Repeats: 17.57 | Unique: 0.083
+Epoch  68/100 (1.1s) | Train Loss: 2.9386 (N:2.0421 D:0.8965 R:11.5508) | Val Loss: 3.0999 | Repeats: 17.72 | Unique: 0.081
+Epoch  69/100 (1.1s) | Train Loss: 2.9475 (N:2.0600 D:0.8875 R:11.5510) | Val Loss: 3.0992 | Repeats: 17.61 | Unique: 0.080
+Epoch  70/100 (1.1s) | Train Loss: 2.9389 (N:2.0443 D:0.8946 R:11.5511) | Val Loss: 3.0987 | Repeats: 17.44 | Unique: 0.081
+Epoch  71/100 (1.0s) | Train Loss: 2.9283 (N:2.0411 D:0.8872 R:11.5512) | Val Loss: 3.1025 | Repeats: 17.36 | Unique: 0.082
+Epoch  72/100 (1.1s) | Train Loss: 2.9687 (N:2.0585 D:0.9102 R:11.5512) | Val Loss: 3.1035 | Repeats: 17.69 | Unique: 0.079
+Epoch  73/100 (1.2s) | Train Loss: 2.9210 (N:2.0359 D:0.8851 R:11.5514) | Val Loss: 3.1052 | Repeats: 17.33 | Unique: 0.081
+Epoch  74/100 (1.1s) | Train Loss: 2.9409 (N:2.0418 D:0.8990 R:11.5515) | Val Loss: 3.1057 | Repeats: 17.23 | Unique: 0.080
+Epoch  75/100 (1.1s) | Train Loss: 2.9246 (N:2.0328 D:0.8918 R:11.5517) | Val Loss: 3.1048 | Repeats: 17.70 | Unique: 0.076
+Epoch  76/100 (1.1s) | Train Loss: 2.9419 (N:2.0521 D:0.8899 R:11.5518) | Val Loss: 3.1051 | Repeats: 17.33 | Unique: 0.079
+Epoch  77/100 (1.1s) | Train Loss: 2.9231 (N:2.0329 D:0.8903 R:11.5518) | Val Loss: 3.1068 | Repeats: 17.30 | Unique: 0.080
+Epoch  78/100 (1.0s) | Train Loss: 2.9491 (N:2.0574 D:0.8917 R:11.5519) | Val Loss: 3.1059 | Repeats: 17.21 | Unique: 0.081
+Epoch  79/100 (1.0s) | Train Loss: 2.9148 (N:2.0330 D:0.8818 R:11.5520) | Val Loss: 3.1050 | Repeats: 17.26 | Unique: 0.080
+Epoch  80/100 (1.0s) | Train Loss: 2.9444 (N:2.0376 D:0.9068 R:11.5521) | Val Loss: 3.1059 | Repeats: 17.08 | Unique: 0.081
+Epoch  81/100 (1.1s) | Train Loss: 2.9656 (N:2.0540 D:0.9116 R:11.5522) | Val Loss: 3.1071 | Repeats: 16.61 | Unique: 0.083
+Epoch  82/100 (1.1s) | Train Loss: 2.9503 (N:2.0364 D:0.9139 R:11.5523) | Val Loss: 3.1075 | Repeats: 16.36 | Unique: 0.084
+Epoch  83/100 (1.2s) | Train Loss: 2.9115 (N:2.0388 D:0.8727 R:11.5524) | Val Loss: 3.1079 | Repeats: 16.16 | Unique: 0.085
+Epoch  84/100 (1.1s) | Train Loss: 2.9250 (N:2.0444 D:0.8806 R:11.5525) | Val Loss: 3.1077 | Repeats: 16.20 | Unique: 0.086
+Epoch  85/100 (1.1s) | Train Loss: 2.9328 (N:2.0557 D:0.8771 R:11.5525) | Val Loss: 3.1077 | Repeats: 16.02 | Unique: 0.086
+Epoch  86/100 (1.1s) | Train Loss: 2.9374 (N:2.0502 D:0.8872 R:11.5525) | Val Loss: 3.1061 | Repeats: 16.77 | Unique: 0.082
+Epoch  87/100 (1.1s) | Train Loss: 2.9319 (N:2.0444 D:0.8875 R:11.5526) | Val Loss: 3.1060 | Repeats: 16.87 | Unique: 0.080
+Epoch  88/100 (1.1s) | Train Loss: 2.9478 (N:2.0552 D:0.8926 R:11.5527) | Val Loss: 3.1054 | Repeats: 16.87 | Unique: 0.080
+Epoch  89/100 (1.1s) | Train Loss: 2.9388 (N:2.0572 D:0.8816 R:11.5527) | Val Loss: 3.1057 | Repeats: 16.89 | Unique: 0.080
+Epoch  90/100 (1.1s) | Train Loss: 2.9416 (N:2.0478 D:0.8939 R:11.5528) | Val Loss: 3.1059 | Repeats: 16.87 | Unique: 0.081
+Epoch  91/100 (1.2s) | Train Loss: 2.9726 (N:2.0643 D:0.9083 R:11.5529) | Val Loss: 3.1065 | Repeats: 16.85 | Unique: 0.081
+Epoch  92/100 (1.1s) | Train Loss: 2.9461 (N:2.0567 D:0.8894 R:11.5529) | Val Loss: 3.1067 | Repeats: 16.85 | Unique: 0.081
+Epoch  93/100 (1.1s) | Train Loss: 2.9465 (N:2.0509 D:0.8955 R:11.5529) | Val Loss: 3.1074 | Repeats: 16.85 | Unique: 0.081
+Epoch  94/100 (1.1s) | Train Loss: 2.9460 (N:2.0641 D:0.8818 R:11.5529) | Val Loss: 3.1074 | Repeats: 16.85 | Unique: 0.081
+Epoch  95/100 (1.2s) | Train Loss: 2.9582 (N:2.0615 D:0.8967 R:11.5530) | Val Loss: 3.1064 | Repeats: 16.75 | Unique: 0.081
+Epoch  96/100 (1.1s) | Train Loss: 2.9529 (N:2.0460 D:0.9070 R:11.5530) | Val Loss: 3.1059 | Repeats: 16.62 | Unique: 0.081
+Epoch  97/100 (1.1s) | Train Loss: 2.9159 (N:2.0311 D:0.8849 R:11.5531) | Val Loss: 3.1057 | Repeats: 16.56 | Unique: 0.081
+Epoch  98/100 (1.1s) | Train Loss: 2.9444 (N:2.0552 D:0.8892 R:11.5531) | Val Loss: 3.1059 | Repeats: 16.61 | Unique: 0.081
+Epoch  99/100 (1.1s) | Train Loss: 2.9328 (N:2.0362 D:0.8966 R:11.5531) | Val Loss: 3.1064 | Repeats: 16.61 | Unique: 0.081
+Epoch 100/100 (1.1s) | Train Loss: 2.9094 (N:2.0282 D:0.8813 R:11.5531) | Val Loss: 3.1064 | Repeats: 16.70 | Unique: 0.081
+
+====================================================================================================
+✅ Training Complete!
+   Best validation loss: 3.0094
+   Model saved to: models/best_bar_aware_lstm.pth
+====================================================================================================
+
+====================================================================================================
+Model B saved as: models/best_bar_aware_lstm.pth
+Please rename to: models/best_bar_aware_lstm_no_reg.pth
+====================================================================================================
+

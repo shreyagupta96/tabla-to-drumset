@@ -1,0 +1,27 @@
+====================================================================================================
+                              PHASE 5: BAR-AWARE LSTM TRAINING
+====================================================================================================
+
+📂 Loading dataset from: training_data/bar_aware_dataset.pkl
+   Training sequences: 150
+   Validation sequences: 61
+
+🔧 Configuration:
+   Device: cpu
+   Batch size: 16
+   Learning rate: 0.001
+   Regularization weight: 0.1
+   Hidden size: 256
+   Num layers: 2
+   Dropout: 0.3
+   Epochs: 100
+
+🏗️  Creating model...
+   Parameters: 974,113
+Traceback (most recent call last):
+  File "/Users/shreyagupta/Desktop/AI_Research_Data/tabla-to-drumset_SG/train_bar_aware_lstm.py", line 411, in <module>
+    train(
+  File "/Users/shreyagupta/Desktop/AI_Research_Data/tabla-to-drumset_SG/train_bar_aware_lstm.py", line 347, in train
+    scheduler = optim.lr_scheduler.ReduceLROnPlateau(optimizer, mode='min', factor=0.5, patience=10, verbose=True)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: ReduceLROnPlateau.__init__() got an unexpected keyword argument 'verbose'

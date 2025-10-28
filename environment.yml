@@ -81,6 +81,7 @@ dependencies:
   - pip:
       - flask_cors
       - flask
+      - python-dotenv
       - executing==2.1.0
       - fastjsonschema==2.21.1
       - filelock==3.17.0

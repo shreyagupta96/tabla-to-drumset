@@ -1,0 +1,33 @@
+BAR-AWARE LSTM TRAINING DATASET SUMMARY
+================================================================================
+
+Total sequences: 211
+  Training: 150
+  Validation: 61
+
+Teental sequences: 100
+Ektaal sequences: 111
+
+Format: 2-bar context → 1-bar target
+Features: note indices + duration bins
+Taal-specific: 0=Teental (16 beats), 1=Ektaal (12 beats)
+
+TRAINING FILES:
+  Teental:
+    - Basic Teental.wav
+    - Teental Dugun Variation 2#01.wav
+    - Teental Dugun Variation#02.wav
+    - Teental Variation 1#02.wav
+    - Teental Variation 2#03.wav
+  Ektaal:
+    - Basic Ektaal#03.wav
+    - Ektaal Dugun Variation#01.wav
+    - Ektaal Dugun#01.wav
+    - Ektaal Variation 1#01.wav
+
+VALIDATION FILES:
+  Teental:
+    - Teental Variation 3#01.wav
+    - Teental Variation 3#02.wav
+  Ektaal:
+    - Ektaal Variation 2#03.wav

@@ -1,0 +1,47 @@
+name: tabla-drumset-minimal
+channels:
+  - defaults
+  - conda-forge
+  - pytorch
+dependencies:
+  # Python runtime
+  - python=3.12
+  
+  # Core system libraries
+  - pip
+  - setuptools
+  - wheel
+  
+  # Essential conda packages for better compatibility
+  - numpy=1.26
+  - pandas=2.2
+  - scikit-learn=1.6
+  - requests=2.32
+  - pyyaml=6.0
+  
+  # Audio processing (conda version for better performance)
+  - librosa=0.10
+  - soundfile=0.13
+  
+  # PyTorch ecosystem (conda-forge for better CUDA support)
+  - pytorch::pytorch
+  - pytorch::torchaudio
+  - pytorch::torchvision
+  
+  # Pip dependencies (minimal set)
+  - pip:
+      # Web framework
+      - flask==2.3.3
+      - flask-cors==4.0.0
+      
+      # Audio processing utilities
+      - pydub==0.25.1
+      
+      # Data serialization
+      - joblib==1.4.2
+      
+      # Utilities
+      - pathlib2==2.3.7
+      
+# Deployment optimizations
+prefix: /opt/anaconda3/envs/tabla-drumset-minimal

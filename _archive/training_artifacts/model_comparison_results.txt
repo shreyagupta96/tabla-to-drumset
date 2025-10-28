@@ -1,0 +1,417 @@
+/opt/anaconda3/envs/ML312/lib/python3.12/site-packages/madmom/io/audio.py:493: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  file_sample_rate, signal = wavfile.read(filename, mmap=True)
+/opt/anaconda3/envs/ML312/lib/python3.12/site-packages/madmom/io/audio.py:493: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  file_sample_rate, signal = wavfile.read(filename, mmap=True)
+/opt/anaconda3/envs/ML312/lib/python3.12/site-packages/madmom/io/audio.py:493: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  file_sample_rate, signal = wavfile.read(filename, mmap=True)
+/opt/anaconda3/envs/ML312/lib/python3.12/site-packages/madmom/io/audio.py:493: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  file_sample_rate, signal = wavfile.read(filename, mmap=True)
+/opt/anaconda3/envs/ML312/lib/python3.12/site-packages/madmom/io/audio.py:493: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  file_sample_rate, signal = wavfile.read(filename, mmap=True)
+/opt/anaconda3/envs/ML312/lib/python3.12/site-packages/madmom/io/audio.py:493: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  file_sample_rate, signal = wavfile.read(filename, mmap=True)
+/opt/anaconda3/envs/ML312/lib/python3.12/site-packages/madmom/io/audio.py:493: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  file_sample_rate, signal = wavfile.read(filename, mmap=True)
+/opt/anaconda3/envs/ML312/lib/python3.12/site-packages/madmom/io/audio.py:493: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  file_sample_rate, signal = wavfile.read(filename, mmap=True)
+/opt/anaconda3/envs/ML312/lib/python3.12/site-packages/madmom/io/audio.py:493: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  file_sample_rate, signal = wavfile.read(filename, mmap=True)
+/opt/anaconda3/envs/ML312/lib/python3.12/site-packages/madmom/io/audio.py:493: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  file_sample_rate, signal = wavfile.read(filename, mmap=True)
+/opt/anaconda3/envs/ML312/lib/python3.12/site-packages/madmom/io/audio.py:493: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  file_sample_rate, signal = wavfile.read(filename, mmap=True)
+/opt/anaconda3/envs/ML312/lib/python3.12/site-packages/madmom/io/audio.py:493: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  file_sample_rate, signal = wavfile.read(filename, mmap=True)
+====================================================================================================
+                              MODEL COMPARISON ON EKTAAL FILE
+====================================================================================================
+
+====================================================================================================
+MODEL A: With Regularization (Original Data)
+====================================================================================================
+====================================================================================================
+                              BAR-AWARE LSTM TEST
+====================================================================================================
+
+📂 Test file: Ektaal.wav
+
+====================================================================================================
+STEP 1: CLASSIFY NOTES WITH CNN
+====================================================================================================
+
+📦 Loading CNN model...
+✅ CNN model loaded
+
+🎵 Classifying tabla strokes...
+
+📂 Loading: Ektaal.wav
+   Duration: 36.0s, Sample rate: 44100Hz
+   Detecting onsets...
+   Found 116 tabla strokes
+   Classifying strokes...
+   ✅ Classified 115 notes
+
+  📝 Applied 1 'Ti Re Ki T' correction(s) in Ektaal.wav:
+     Position 15: Re Ti Ki Ki → Ti Re Ki T
+
+✅ Classification complete:
+   Total notes: 115
+   First 20 notes: Dhin Dhin Dha Ghe Re Ti Ki Kat Tun Na Ta Tin Ta Dha Ghe Ti Re Ki T Dhin
+
+====================================================================================================
+STEP 2: METER DETECTION & BAR SEGMENTATION
+====================================================================================================
+
+🔍 Running meter detection...
+🔍 Running hybrid meter estimation...
+🔍 Running meter analysis on: /Users/shreyagupta/Desktop/AI_Research_Data/Tabla_files/Ektaal.wav
+🎯 Predicted meter: 12
+🎯 Predicted meter: 12
+MFCC peak: 12 | Chroma peak: 12
+✅ Agreement between MFCC and Chroma
+✅ Exported 60 downbeat slices to 'downbeat_slices' folder.
+🎯 Predicted meter: 12
+🎯 Predicted meter: 12
+MFCC peak: 12 | Chroma peak: 12
+✅ Agreement between MFCC and Chroma
+🧠 Estimated meter (beats per bar): 12
+🧹 Cleared 16 old files from 'bar_slices'
+✅ Exported 5 bar slices to 'bar_slices' folder.
+🎯 Bar start sample indices:
+[1323, 318843, 636363, 953883, 1271403]
+🎵 Estimated tempo: 100.00 BPM
+🎵 Swing-adjusted beats:
+[0.03, 0.634, 1.237, 1.83, 2.422, 3.037, 3.629, 4.233, 4.825, 5.429, 6.032, 6.624, 7.23, 7.834, 8.437, 9.03, 9.622, 10.237, 10.829, 11.433, 12.025, 12.629, 13.232, 13.824, 14.43, 15.034, 15.637, 16.23, 16.822, 17.437, 18.029, 18.633, 19.225, 19.829, 20.432, 21.024, 21.63, 22.234, 22.837, 23.43, 24.022, 24.637, 25.229, 25.833, 26.425, 27.029, 27.632, 28.224, 28.83, 29.434, 30.037, 30.63, 31.222, 31.837, 32.429, 33.033, 33.625, 34.229, 34.832, 35.424]...
+🧮 Total adjusted beats: 60
+🧪 Adjusted beat samples:
+[1323, 27947, 54571, 80683, 106795, 133931, 160043, 186667, 212779, 239403, 266027, 292139, 318843, 345467, 372091, 398203, 424315, 451451, 477563, 504187, 530299, 556923, 583547, 609659, 636363, 662987, 689611, 715723, 741835, 768971, 795083, 821707, 847819, 874443, 901067, 927179, 953883, 980507, 1007131, 1033243, 1059355, 1086491, 1112603, 1139227, 1165339, 1191963, 1218587, 1244699, 1271403, 1298027, 1324651, 1350763, 1376875, 1404011, 1430123, 1456747, 1482859, 1509483, 1536107, 1562219]
+
+✅ Meter detection:
+   Taal: Ektaal (meter=12)
+   Tempo: 100.0 BPM
+   Bar boundaries: 5 samples
+
+✂️  Segmenting notes into bars...
+
+✅ Segmentation complete:
+   Total bars: 4
+   Notes per bar: min=22, max=24, avg=23.0
+
+📊 First 2 bars:
+   Bar 0: Dhin Dha Ghe Re Ti Ki Kat Tun Na Ta Tin Ta Dha Ghe Ti Re Ki T Dhin Re Na Na Dhin
+   Bar 1: Dhin Dha Ghe Re Ti Ki Kat Tun Na Ta Tin Ta Dha Ghe Re Ti Ki Kat Dhin Re Na Na
+
+====================================================================================================
+STEP 3: GENERATE WITH BAR-AWARE LSTM
+====================================================================================================
+
+📦 Loading bar-aware LSTM model...
+✅ Bar-aware LSTM loaded
+   Trained epochs: 19
+   Val loss: 3.0360
+
+🌱 Seed (last 2 bars):
+   Bar 2: Dhin Dhin Dha Ghe Re Ti Ki Kat Tun Na Ta Tin Ta Dha Ghe Re Ti Ki Kat Dhin Re Na Na Dhin
+   Bar 3: Dhin Dha Ghe Re Ti Ki Kat Tun Na Ta Tin Ta Dha Ghe Re Ti Ki Kat Dhin Re Na Na Dhin
+   Total seed length: 47 notes
+
+🎲 Generating 32 notes with temperature=1.0...
+
+✅ Generation complete!
+
+🎵 Generated sequence (32 notes):
+   Ghe Ghe T Ti T Ghe Ti Dha Ghe T T Dha Ki T T Re T Dhin Dha Dhin Kat Re Ghe Ta T T Dhin T Re Ghe Ki Kat
+
+====================================================================================================
+GENERATION QUALITY ANALYSIS
+====================================================================================================
+
+📊 Metrics:
+   Max consecutive repeats: 2
+   Unique notes: 9/32 (28.1%)
+   Note distribution:
+      T: 10
+      Ghe: 6
+      Dha: 3
+      Re: 3
+      Dhin: 3
+      Ti: 2
+      Ki: 2
+      Kat: 2
+      Ta: 1
+
+✨ Embedding regularization effects:
+   ⚠️  Only Ta present
+
+====================================================================================================
+✅ TEST COMPLETE!
+====================================================================================================
+
+====================================================================================================
+MODEL B: No Regularization (Original Data)
+====================================================================================================
+====================================================================================================
+                              BAR-AWARE LSTM TEST
+====================================================================================================
+
+📂 Test file: Ektaal.wav
+
+====================================================================================================
+STEP 1: CLASSIFY NOTES WITH CNN
+====================================================================================================
+
+📦 Loading CNN model...
+✅ CNN model loaded
+
+🎵 Classifying tabla strokes...
+
+📂 Loading: Ektaal.wav
+   Duration: 36.0s, Sample rate: 44100Hz
+   Detecting onsets...
+   Found 116 tabla strokes
+   Classifying strokes...
+   ✅ Classified 115 notes
+
+  📝 Applied 1 'Ti Re Ki T' correction(s) in Ektaal.wav:
+     Position 15: Re Ti Ki Ki → Ti Re Ki T
+
+✅ Classification complete:
+   Total notes: 115
+   First 20 notes: Dhin Dhin Dha Ghe Re Ti Ki Kat Tun Na Ta Tin Ta Dha Ghe Ti Re Ki T Dhin
+
+====================================================================================================
+STEP 2: METER DETECTION & BAR SEGMENTATION
+====================================================================================================
+
+🔍 Running meter detection...
+🔍 Running hybrid meter estimation...
+🔍 Running meter analysis on: /Users/shreyagupta/Desktop/AI_Research_Data/Tabla_files/Ektaal.wav
+🎯 Predicted meter: 12
+🎯 Predicted meter: 12
+MFCC peak: 12 | Chroma peak: 12
+✅ Agreement between MFCC and Chroma
+✅ Exported 60 downbeat slices to 'downbeat_slices' folder.
+🎯 Predicted meter: 12
+🎯 Predicted meter: 12
+MFCC peak: 12 | Chroma peak: 12
+✅ Agreement between MFCC and Chroma
+🧠 Estimated meter (beats per bar): 12
+🧹 Cleared 5 old files from 'bar_slices'
+✅ Exported 5 bar slices to 'bar_slices' folder.
+🎯 Bar start sample indices:
+[1323, 318843, 636363, 953883, 1271403]
+🎵 Estimated tempo: 100.00 BPM
+🎵 Swing-adjusted beats:
+[0.03, 0.634, 1.237, 1.83, 2.422, 3.037, 3.629, 4.233, 4.825, 5.429, 6.032, 6.624, 7.23, 7.834, 8.437, 9.03, 9.622, 10.237, 10.829, 11.433, 12.025, 12.629, 13.232, 13.824, 14.43, 15.034, 15.637, 16.23, 16.822, 17.437, 18.029, 18.633, 19.225, 19.829, 20.432, 21.024, 21.63, 22.234, 22.837, 23.43, 24.022, 24.637, 25.229, 25.833, 26.425, 27.029, 27.632, 28.224, 28.83, 29.434, 30.037, 30.63, 31.222, 31.837, 32.429, 33.033, 33.625, 34.229, 34.832, 35.424]...
+🧮 Total adjusted beats: 60
+🧪 Adjusted beat samples:
+[1323, 27947, 54571, 80683, 106795, 133931, 160043, 186667, 212779, 239403, 266027, 292139, 318843, 345467, 372091, 398203, 424315, 451451, 477563, 504187, 530299, 556923, 583547, 609659, 636363, 662987, 689611, 715723, 741835, 768971, 795083, 821707, 847819, 874443, 901067, 927179, 953883, 980507, 1007131, 1033243, 1059355, 1086491, 1112603, 1139227, 1165339, 1191963, 1218587, 1244699, 1271403, 1298027, 1324651, 1350763, 1376875, 1404011, 1430123, 1456747, 1482859, 1509483, 1536107, 1562219]
+
+✅ Meter detection:
+   Taal: Ektaal (meter=12)
+   Tempo: 100.0 BPM
+   Bar boundaries: 5 samples
+
+✂️  Segmenting notes into bars...
+
+✅ Segmentation complete:
+   Total bars: 4
+   Notes per bar: min=22, max=24, avg=23.0
+
+📊 First 2 bars:
+   Bar 0: Dhin Dha Ghe Re Ti Ki Kat Tun Na Ta Tin Ta Dha Ghe Ti Re Ki T Dhin Re Na Na Dhin
+   Bar 1: Dhin Dha Ghe Re Ti Ki Kat Tun Na Ta Tin Ta Dha Ghe Re Ti Ki Kat Dhin Re Na Na
+
+====================================================================================================
+STEP 3: GENERATE WITH BAR-AWARE LSTM
+====================================================================================================
+
+📦 Loading bar-aware LSTM model...
+✅ Bar-aware LSTM loaded
+   Trained epochs: 20
+   Val loss: 3.0094
+
+🌱 Seed (last 2 bars):
+   Bar 2: Dhin Dhin Dha Ghe Re Ti Ki Kat Tun Na Ta Tin Ta Dha Ghe Re Ti Ki Kat Dhin Re Na Na Dhin
+   Bar 3: Dhin Dha Ghe Re Ti Ki Kat Tun Na Ta Tin Ta Dha Ghe Re Ti Ki Kat Dhin Re Na Na Dhin
+   Total seed length: 47 notes
+
+🎲 Generating 32 notes with temperature=1.0...
+
+✅ Generation complete!
+
+🎵 Generated sequence (32 notes):
+   Ghe T Re Dha Tin Dhin Ta Tin Dhin T Na Dhin Re T Kat Dhin Dhin Dhin Dha Dha Dhin Dhin Tin Dhin Re Dhin Dhin Re Na Dha Ti T
+
+====================================================================================================
+GENERATION QUALITY ANALYSIS
+====================================================================================================
+
+📊 Metrics:
+   Max consecutive repeats: 3
+   Unique notes: 10/32 (31.2%)
+   Note distribution:
+      Dhin: 11
+      T: 4
+      Re: 4
+      Dha: 4
+      Tin: 3
+      Na: 2
+      Ghe: 1
+      Ta: 1
+      Kat: 1
+      Ti: 1
+
+✨ Embedding regularization effects:
+   ✅ Both Na and Ta present (good variation!)
+   ⚠️  Only Tin present
+
+====================================================================================================
+✅ TEST COMPLETE!
+====================================================================================================
+
+====================================================================================================
+MODEL C: With Regularization (Corrected Data - 69 'Ti Re Ki T' fixes)
+====================================================================================================
+====================================================================================================
+                              BAR-AWARE LSTM TEST
+====================================================================================================
+
+📂 Test file: Ektaal.wav
+
+====================================================================================================
+STEP 1: CLASSIFY NOTES WITH CNN
+====================================================================================================
+
+📦 Loading CNN model...
+✅ CNN model loaded
+
+🎵 Classifying tabla strokes...
+
+📂 Loading: Ektaal.wav
+   Duration: 36.0s, Sample rate: 44100Hz
+   Detecting onsets...
+   Found 116 tabla strokes
+   Classifying strokes...
+   ✅ Classified 115 notes
+
+  📝 Applied 1 'Ti Re Ki T' correction(s) in Ektaal.wav:
+     Position 15: Re Ti Ki Ki → Ti Re Ki T
+
+✅ Classification complete:
+   Total notes: 115
+   First 20 notes: Dhin Dhin Dha Ghe Re Ti Ki Kat Tun Na Ta Tin Ta Dha Ghe Ti Re Ki T Dhin
+
+====================================================================================================
+STEP 2: METER DETECTION & BAR SEGMENTATION
+====================================================================================================
+
+🔍 Running meter detection...
+🔍 Running hybrid meter estimation...
+🔍 Running meter analysis on: /Users/shreyagupta/Desktop/AI_Research_Data/Tabla_files/Ektaal.wav
+🎯 Predicted meter: 12
+🎯 Predicted meter: 12
+MFCC peak: 12 | Chroma peak: 12
+✅ Agreement between MFCC and Chroma
+✅ Exported 60 downbeat slices to 'downbeat_slices' folder.
+🎯 Predicted meter: 12
+🎯 Predicted meter: 12
+MFCC peak: 12 | Chroma peak: 12
+✅ Agreement between MFCC and Chroma
+🧠 Estimated meter (beats per bar): 12
+🧹 Cleared 5 old files from 'bar_slices'
+✅ Exported 5 bar slices to 'bar_slices' folder.
+🎯 Bar start sample indices:
+[1323, 318843, 636363, 953883, 1271403]
+🎵 Estimated tempo: 100.00 BPM
+🎵 Swing-adjusted beats:
+[0.03, 0.634, 1.237, 1.83, 2.422, 3.037, 3.629, 4.233, 4.825, 5.429, 6.032, 6.624, 7.23, 7.834, 8.437, 9.03, 9.622, 10.237, 10.829, 11.433, 12.025, 12.629, 13.232, 13.824, 14.43, 15.034, 15.637, 16.23, 16.822, 17.437, 18.029, 18.633, 19.225, 19.829, 20.432, 21.024, 21.63, 22.234, 22.837, 23.43, 24.022, 24.637, 25.229, 25.833, 26.425, 27.029, 27.632, 28.224, 28.83, 29.434, 30.037, 30.63, 31.222, 31.837, 32.429, 33.033, 33.625, 34.229, 34.832, 35.424]...
+🧮 Total adjusted beats: 60
+🧪 Adjusted beat samples:
+[1323, 27947, 54571, 80683, 106795, 133931, 160043, 186667, 212779, 239403, 266027, 292139, 318843, 345467, 372091, 398203, 424315, 451451, 477563, 504187, 530299, 556923, 583547, 609659, 636363, 662987, 689611, 715723, 741835, 768971, 795083, 821707, 847819, 874443, 901067, 927179, 953883, 980507, 1007131, 1033243, 1059355, 1086491, 1112603, 1139227, 1165339, 1191963, 1218587, 1244699, 1271403, 1298027, 1324651, 1350763, 1376875, 1404011, 1430123, 1456747, 1482859, 1509483, 1536107, 1562219]
+
+✅ Meter detection:
+   Taal: Ektaal (meter=12)
+   Tempo: 100.0 BPM
+   Bar boundaries: 5 samples
+
+✂️  Segmenting notes into bars...
+
+✅ Segmentation complete:
+   Total bars: 4
+   Notes per bar: min=22, max=24, avg=23.0
+
+📊 First 2 bars:
+   Bar 0: Dhin Dha Ghe Re Ti Ki Kat Tun Na Ta Tin Ta Dha Ghe Ti Re Ki T Dhin Re Na Na Dhin
+   Bar 1: Dhin Dha Ghe Re Ti Ki Kat Tun Na Ta Tin Ta Dha Ghe Re Ti Ki Kat Dhin Re Na Na
+
+====================================================================================================
+STEP 3: GENERATE WITH BAR-AWARE LSTM
+====================================================================================================
+
+📦 Loading bar-aware LSTM model...
+✅ Bar-aware LSTM loaded
+   Trained epochs: 19
+   Val loss: 3.0360
+
+🌱 Seed (last 2 bars):
+   Bar 2: Dhin Dhin Dha Ghe Re Ti Ki Kat Tun Na Ta Tin Ta Dha Ghe Re Ti Ki Kat Dhin Re Na Na Dhin
+   Bar 3: Dhin Dha Ghe Re Ti Ki Kat Tun Na Ta Tin Ta Dha Ghe Re Ti Ki Kat Dhin Re Na Na Dhin
+   Total seed length: 47 notes
+
+🎲 Generating 32 notes with temperature=1.0...
+
+✅ Generation complete!
+
+🎵 Generated sequence (32 notes):
+   T Ta Dha Re T Ki T Ghe T Na T Dha Ta Dhin Dhin T Dhin Ti T Dha Ti T Ti Ghe T T Tin Na T Dha Dha Tin
+
+====================================================================================================
+GENERATION QUALITY ANALYSIS
+====================================================================================================
+
+📊 Metrics:
+   Max consecutive repeats: 2
+   Unique notes: 10/32 (31.2%)
+   Note distribution:
+      T: 11
+      Dha: 5
+      Dhin: 3
+      Ti: 3
+      Ta: 2
+      Ghe: 2
+      Na: 2
+      Tin: 2
+      Re: 1
+      Ki: 1
+
+✨ Embedding regularization effects:
+   ✅ Both Na and Ta present (good variation!)
+   ⚠️  Only Tin present
+
+====================================================================================================
+✅ TEST COMPLETE!
+====================================================================================================
+
+====================================================================================================
+                              FINAL COMPARISON SUMMARY
+====================================================================================================
+
+📊 Model A (Original + Reg):
+   Max repeats: 2
+   Unique ratio: 28.1%
+   Generated: Ghe Ghe T Ti T Ghe Ti Dha Ghe T T Dha Ki T T Re T Dhin Dha Dhin Kat Re Ghe Ta T T Dhin T Re Ghe Ki Kat
+
+📊 Model B (Original + No Reg):
+   Max repeats: 3
+   Unique ratio: 31.2%
+   Generated: Ghe T Re Dha Tin Dhin Ta Tin Dhin T Na Dhin Re T Kat Dhin Dhin Dhin Dha Dha Dhin Dhin Tin Dhin Re Dhin Dhin Re Na Dha Ti T
+
+📊 Model C (Corrected + Reg):
+   Max repeats: 2
+   Unique ratio: 31.2%
+   Generated: T Ta Dha Re T Ki T Ghe T Na T Dha Ta Dhin Dhin T Dhin Ti T Dha Ti T Ti Ghe T T Tin Na T Dha Dha Tin
+
+====================================================================================================
+✅ COMPARISON COMPLETE!
+====================================================================================================

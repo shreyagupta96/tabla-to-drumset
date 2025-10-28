@@ -1,0 +1,34 @@
+name: tabla-drumset-prod
+channels:
+  - defaults
+  - conda-forge
+  - pytorch
+dependencies:
+  # Python runtime
+  - python=3.12
+  - pip
+  
+  # Core dependencies only
+  - numpy
+  - pandas
+  - scikit-learn
+  - librosa
+  - soundfile
+  
+  # PyTorch (CPU-only for smaller size, change to GPU if needed)
+  - pytorch::pytorch-cpu
+  - pytorch::torchaudio
+  
+  - pip:
+      # Web API
+      - flask
+      - flask-cors
+      
+      # Audio utilities (if needed)
+      - pydub
+      
+      # ML utilities
+      - joblib
+
+# Ultra-minimal for production deployment
+prefix: /opt/anaconda3/envs/tabla-drumset-prod

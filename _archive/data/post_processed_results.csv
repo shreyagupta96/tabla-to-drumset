@@ -1,0 +1,61 @@
+File,Num_Notes,Duration(s),Original_Notes,Corrected_Notes,Corrections_Made,Correction_Details
+TablaLive/Ektaal_01.wav,21,9.20,Dhin Dhin Dha Ghe Re Re Kat T Tin Ta Kat Tun T Dha Ghe Re Re T T Dhin Na,Dhin Dhin Dha Ghe Ti Re Ki T Tin Ta Kat Tun T Dha Ghe Ti Re Ki T Dhin Na,2,Pos5-8: Re Re Kat T→Ti Re Ki T; Pos16-19: Re Re T T→Ti Re Ki T
+TablaLive/Ektaal_02.wav,20,9.39,Dhin Dhin Dha Ghe Re Re Ki T Tin Ta Tin Tun Dha Ghe Re Re Ki T Dhin Dha,Dhin Dhin Dha Ghe Re Re Ki T Tin Ta Tin Tun Dha Ghe Re Re Ki T Dhin Dha,0,None
+TablaLive/Ektaal_03.wav,20,9.22,Dhin Dhin Dha Ghe Re Re Kat T Tin Ta T Tun Dha Ghe Dhin Re Dhin T Dhin Na,Dhin Dhin Dha Ghe Ti Re Ki T Tin Ta T Tun Dha Ghe Dhin Re Dhin T Dhin Na,1,Pos5-8: Re Re Kat T→Ti Re Ki T
+TablaLive/Ektaal_04.wav,20,9.26,Dhin Dhin Dha Ghe Re Re Kat T Tin Ta Kat Tun Dha Ghe Re Re Kat T Dhin Na,Dhin Dhin Dha Ghe Re Re Kat T Tin Ta Kat Tun Dha Ghe Ti Re Ki T Dhin Na,1,Pos15-18: Re Re Kat T→Ti Re Ki T
+TablaLive/Ektaal_05.wav,20,9.18,Dhin Dhin Dha Ghe Re Re Kat T Tin Ta Dhin Tun Dha Ghe Re Re Kat T Dhin Na,Dhin Dhin Dha Ghe Ti Re Ki T Tin Ta Dhin Tun Dha Ghe Re Re Kat T Dhin Na,1,Pos5-8: Re Re Kat T→Ti Re Ki T
+TablaLive/Ektaal_06.wav,20,9.24,Dhin Dhin Dha Ghe Ti Re Kat T Tin Ta Kat Tin Dha Ghe Re Re Kat T Dhin Na,Dhin Dhin Dha Ghe Ti Re Ki T Tin Ta Kat Tin Dha Ghe Re Re Kat T Dhin Na,1,Pos5-8: Ti Re Kat T→Ti Re Ki T
+TablaLive/Ektaal_07.wav,22,10.22,Dhin Dhin Dha Ghe Re Re Kat T Tin Ta Kat Tun T Dha Ghe Re Re Kat T Dhin Dha Dhin,Dhin Dhin Dha Ghe Ti Re Ki T Tin Ta Kat Tun T Dha Ghe Ti Re Ki T Dhin Dha Dhin,2,Pos5-8: Re Re Kat T→Ti Re Ki T; Pos16-19: Re Re Kat T→Ti Re Ki T
+TablaLive/Jhaptaal_1.wav,10,7.66,Dhin Na Dhin Dhin Ta Tin Ta Dhin Dhin Na,Dhin Na Dhin Dhin Ta Tin Ta Dhin Dhin Na,0,None
+TablaLive/Jhaptaal_2.wav,10,7.71,Dhin Na Dhin Dhin Ta Tin Ta Dhin Dhin Na,Dhin Na Dhin Dhin Ta Tin Ta Dhin Dhin Na,0,None
+TablaLive/Jhaptaal_3.wav,11,7.81,Dhin Na Dhin Dhin Na Tin Ta Dhin Dhin Ghe Na,Dhin Na Dhin Dhin Na Tin Ta Dhin Dhin Ghe Na,0,None
+TablaLive/Jhaptaal_4.wav,10,7.70,Dhin Na Dhin Dhin Ta Tin Ta Dhin Dhin Na,Dhin Na Dhin Dhin Ta Tin Ta Dhin Dhin Na,0,None
+TablaLive/Jhaptaal_5.wav,10,7.65,Dhin Na Dhin Dhin Ta Tin Ta Dhin Dhin Na,Dhin Na Dhin Dhin Ta Tin Ta Dhin Dhin Na,0,None
+TablaLive/Jhaptaal_6.wav,10,7.60,Dhin Na Dhin Dhin Na Tin Ta Dhin Dhin Na,Dhin Na Dhin Dhin Na Tin Ta Dhin Dhin Na,0,None
+TablaLive/Jhaptaal_7.wav,10,7.76,Dhin Na Dhin Dhin Na Tin Ta Dhin Dhin Na,Dhin Na Dhin Dhin Na Tin Ta Dhin Dhin Na,0,None
+TablaLive/Jhaptaal_8.wav,11,8.50,Dhin Na Dhin Dhin Ta Tin Ta Dhin Dhin Na Dhin,Dhin Na Dhin Dhin Ta Tin Ta Dhin Dhin Na Dhin,0,None
+TablaLive/Rupak_01.wav,7,5.39,Tin Tin Ta Dhin Dha Dhin Ta,Tin Tin Ta Dhin Dha Dhin Ta,0,None
+TablaLive/Rupak_02.wav,7,5.43,Tin Tin Ta Dhin Na Dhin Na,Tin Tin Ta Dhin Na Dhin Na,0,None
+TablaLive/Rupak_03.wav,7,5.45,Tin Tin Ta Dhin Na Dhin Na,Tin Tin Ta Dhin Na Dhin Na,0,None
+TablaLive/Rupak_04.wav,7,5.36,Tin Tin Ta Dhin Na Dhin Na,Tin Tin Ta Dhin Na Dhin Na,0,None
+TablaLive/Rupak_05.wav,7,5.45,Tin Tin Ta Dhin Na Dhin Na,Tin Tin Ta Dhin Na Dhin Na,0,None
+TablaLive/Rupak_06.wav,7,5.33,Tin Tin Ta Dhin Na Dhin Na,Tin Tin Ta Dhin Na Dhin Na,0,None
+TablaLive/Rupak_07.wav,8,5.40,Tin Tin Ta Dhin Na T Dhin Na,Tin Tin Ta Dhin Na T Dhin Na,0,None
+TablaLive/Rupak_08.wav,7,5.34,Tin Tin Ta Dhin Na Dhin Na,Tin Tin Ta Dhin Na Dhin Na,0,None
+TablaLive/Rupak_09.wav,7,5.35,Tin Tin Ta Dhin Na Dhin Na,Tin Tin Ta Dhin Na Dhin Na,0,None
+TablaLive/Rupak_10.wav,8,6.36,Tin Tin Ta Dhin Na Dhin Na Tin,Tin Tin Ta Dhin Na Dhin Na Tin,0,None
+TablaPU/Ada Chautaal (14).wav,32,11.14,Dhin Kat Ti Ki Ti Dhin Kat Ta Ta Tun Ta Ta Ta Tin Tun Ti Ti Ki Ti Dhin Kat Ta Ta Dhin Dhin Dhin Dhin Dhin Dha Kat Dha Dha,Dhin Ti Re Ki T Dhin Kat Ta Ta Tun Ta Ta Ta Tin Tun Ti Re Ki T Dhin Kat Ta Ta Dhin Dhin Dhin Dhin Dhin Dha Kat Dha Dha,2,Pos2-5: Kat Ti Ki Ti→Ti Re Ki T; Pos16-19: Ti Ti Ki Ti→Ti Re Ki T
+TablaPU/Addha Taal (16).wav,20,12.39,Dha Dhin Dhin Dha Dhin Dha Dhin Dhin Dha Dhin Dha Tin Ki Ta Tin Ta Dhin Dhin Dha T,Dha Dhin Dhin Dha Dhin Dha Dhin Dhin Dha Dhin Dha Tin Ki Ta Tin Ta Dhin Dhin Dha T,0,None
+TablaPU/Ardha Jai Taal (6.5).wav,18,5.23,Dhin Dhin Dha Ghe Re Ti Ki Ti Dhin Ta Kat Tun Dhin Ta Dhin Dhin Dha Dha,Dhin Dhin Dha Ghe Ti Re Ki T Dhin Ta Kat Tun Dhin Ta Dhin Dhin Dha Dha,1,Pos5-8: Re Ti Ki Ti→Ti Re Ki T
+TablaPU/Ardha Shikhar taal (8.5).wav,15,6.67,Dhin Kat Ti Kat Ti Dhin Ta Tun Ta Ta Dhin Ta Dhin Dhin Ta,Dhin Kat Ti Kat Ti Dhin Ta Tun Ta Ta Dhin Ta Dhin Dhin Ta,0,None
+TablaPU/Ashta Jhaptaal (8.5).wav,17,6.71,Dhin Ki Ta Tin Dhin Kat Dhin Dhin Ta Tin Tin Kat Ta Tin Dhin Dhin Dha,Dhin Ki Ta Tin Dhin Kat Dhin Dhin Ta Tin Tin Kat Ta Tin Dhin Dhin Dha,0,None
+TablaPU/Bhajani (8).wav,19,6.38,Dhin Ki Kat Ta Dhin Dhin Ta Tin Dhin Dhin Dhin Kat Ta Tin Tin Ta Dha Dhin Dhin,Dhin Ki Kat Ta Dhin Dhin Ta Tin Dhin Dhin Dhin Kat Ta Tin Tin Ta Dha Dhin Dhin,0,None
+TablaPU/Chachar (16).wav,21,12.45,Dha Kat Dhin Dhin Dha Tin Dha Dha Tin Ta Kat Tin Dha Tin Dha Dha Dhin Kat Kat Kat Ti,Dha Kat Dhin Dhin Dha Tin Dha Dha Tin Ta Kat Tin Dha Tin Dha Dha Dhin Kat Kat Kat Ti,0,None
+TablaPU/Chartal-ki-Sawari (11).wav,21,8.65,Dhin Kat Ti Kat Ti Dhin Ta Tin Tun Ta Ta Tin Tun Dhin Dhin Dhin Ta Dha Dhin Dhin Ta,Dhin Kat Ti Kat Ti Dhin Ta Tin Tun Ta Ta Tin Tun Dhin Dhin Dhin Ta Dha Dhin Dhin Ta,0,None
+TablaPU/Dadra (6).wav,8,4.61,Dha Dhin Ta Tin Dha Tin Ta Tin,Dha Dhin Ta Tin Dha Tin Ta Tin,0,None
+TablaPU/Dakshinatya Rupak (6).wav,11,4.66,Dha Dhin Kat Dhin Dhin Dha Dhin Kat Ta Ta T,Dha Dhin Kat Dhin Dhin Dha Dhin Kat Ta Ta T,0,None
+TablaPU/Deepchandi (14).wav,18,10.86,Dha Tin Dhin Dha Tin Dha Dha Tin Ta Ki Tin Dha Tin Dha Dha Dhin Dhin Dhin,Dha Tin Dhin Dha Tin Dha Dha Tin Ta Ki Tin Dha Tin Dha Dha Dhin Dhin Dhin,0,None
+TablaPU/Firdost (14).wav,28,11.05,Dhin Dhin Dha Ghe Re Kat Kat Ki Tun Ta Kat Tun Dhin Dha Tin Tun Ti Ti Ki Ti Dhin Dha Tin Dha Kat Ti Ki Ti,Dhin Dhin Dha Ghe Re Kat Kat Ki Tun Ta Kat Tun Dhin Dha Tin Tun Ti Re Ki T Dhin Dha Tin Dha Ti Re Ki T,2,Pos17-20: Ti Ti Ki Ti→Ti Re Ki T; Pos25-28: Kat Ti Ki Ti→Ti Re Ki T
+TablaPU/Gajamukha Taal (16).wav,22,12.44,Dhin Ki Ti Ki Ti Dhin Dha Tun Ta Ta Tin Tun Ti Ti Ki Ti Dhin Dha Dhin Dhin Na Ta,Dhin Ti Re Ki T Dhin Dha Tun Ta Ta Tin Tun Ti Re Ki T Dhin Dha Dhin Dhin Na Ta,2,Pos2-5: Ki Ti Ki Ti→Ti Re Ki T; Pos13-16: Ti Ti Ki Ti→Ti Re Ki T
+TablaPU/Jai Taal (13).wav,21,10.17,Dhin Kat Kat Ki Ti Dhin Ta Ti Ti Ki Ti Dhin Ta Tun Ta Ta Dhin Dhin Dha Dha Re,Dhin Ti Re Ki T Dhin Ta Ti Re Ki T Dhin Ta Tun Ta Ta Dhin Dhin Dha Dha Re,2,Pos2-5: Kat Kat Ki Ti→Ti Re Ki T; Pos8-11: Ti Ti Ki Ti→Ti Re Ki T
+TablaPU/Jat Taal (8).wav,24,6.48,Dha Tin Dhin Dhin Dha T Dhin Dhin Dha Tin Ki Ta Tin Tin Kat Dha T Dhin Dhin Dha Dhin Ki Dhin Dhin,Dha Tin Dhin Dhin Dha T Dhin Dhin Dha Tin Ki Ta Tin Tin Kat Dha T Dhin Dhin Dha Dhin Ki Dhin Dhin,0,None
+TablaPU/Jhaptaal (10).wav,19,7.88,Dhin Dhin Na Tin Dhin Kat Dhin Ta Ta Tin Ki Ta Tin Dhin Dhin Dhin Ta Ta Tin,Dhin Dhin Na Tin Dhin Kat Dhin Ta Ta Tin Ki Ta Tin Dhin Dhin Dhin Ta Ta Tin,0,None
+TablaPU/Jhoomra (14).wav,40,11.31,Dhin Re Dhin Dha Kat Ti Ki Ti Dhin Dhin Dhin Dhin Dha Kat Dha Ghe Re Re Ki Kat Tin Ki Ta Ta T Ti Ki Ti Dhin Kat Dhin Dhin Dha Kat Dha Ghe Re Re Ki Kat,Dhin Re Dhin Dha Ti Re Ki T Dhin Dhin Dhin Dhin Dha Kat Dha Ghe Ti Re Ki T Tin Ki Ta Ta Ti Re Ki T Dhin Kat Dhin Dhin Dha Kat Dha Ghe Ti Re Ki T,4,Pos5-8: Kat Ti Ki Ti→Ti Re Ki T; Pos17-20: Re Re Ki Kat→Ti Re Ki T; Pos25-28: T Ti Ki Ti→Ti Re Ki T; Pos37-40: Re Re Ki Kat→Ti Re Ki T
+TablaPU/Kalawati (9.5).wav,17,7.46,Dhin Kat Ti Kat Ti Dhin Ta Tin Tun Ta Ta Tin Tun Dhin Dhin Dhin Ta,Dhin Kat Ti Kat Ti Dhin Ta Tin Tun Ta Ta Tin Tun Dhin Dhin Dhin Ta,0,None
+TablaPU/Keherva (8).wav,16,6.31,Dha Ghe Dha Tin Ta Ghe Dhin Ta Dha Ghe Dha Tin Ta Ghe Dhin Ta,Dha Ghe Dha Tin Ta Ghe Dhin Ta Dha Ghe Dha Tin Ta Ghe Dhin Ta,0,None
+TablaPU/Matta Taal (9).wav,16,7.06,Dhin Kat Ti Kat Ti Dhin Ta Tun Ta Ta Dhin Dhin Dha Dhin Dhin Dha,Dhin Kat Ti Kat Ti Dhin Ta Tun Ta Ta Dhin Dhin Dha Dhin Dhin Dha,0,None
+TablaPU/Moghuli (7).wav,8,5.36,Tin Ta Tin Dhin Dhin Ta Ta Tin,Tin Ta Tin Dhin Dhin Ta Ta Tin,0,None
+TablaPU/Neel Taal (7.5).wav,18,5.98,Tin Ki Kat Tin Tin Ta Tin Dhin Dhin Ta Tin Tin Dhin Dha Dhin Dhin Dhin Dha,Tin Ki Kat Tin Tin Ta Tin Dhin Dhin Ta Tin Tin Dhin Dha Dhin Dhin Dhin Dha,0,None
+TablaPU/Pancham Sawari Taal (15).wav,29,11.83,Dhin Dha Dhin Dhin Kat Dhin Dhin Dha Dhin Dhin Dha Tin Kat Tin Ta T Ti Ki Ti Tun Na Kat Tun Dhin Dhin Dha Dhin Dhin Dha,Dhin Dha Dhin Dhin Kat Dhin Dhin Dha Dhin Dhin Dha Tin Kat Tin Ta Ti Re Ki T Tun Na Kat Tun Dhin Dhin Dha Dhin Dhin Dha,1,Pos16-19: T Ti Ki Ti→Ti Re Ki T
+TablaPU/Pashto (7).wav,11,5.39,Tin Tin Ta T Ti Dhin Ta Tin Dhin Ta Tin,Tin Tin Ta T Ti Dhin Ta Tin Dhin Ta Tin,0,None
+TablaPU/Rudra Taal (11).wav,18,8.60,Dha T Dha Ti Ti Kat Ti Dhin Ta Ti Ti Kat Ti Tun Ta Ta Tin Tun,Dha T Dha Ti Re Ki T Dhin Ta Ti Re Ki T Tun Ta Ta Tin Tun,2,Pos4-7: Ti Ti Kat Ti→Ti Re Ki T; Pos10-13: Ti Ti Kat Ti→Ti Re Ki T
+TablaPU/Rupak (7).wav,10,5.37,Tin Tin Ta Tin Dhin Na T Dhin Na Tin,Tin Tin Ta Tin Dhin Na T Dhin Na Tin,0,None
+TablaPU/Saatva (7).wav,7,5.31,Dha Ghe Kat Dha Ghe Tin T,Dha Ghe Kat Dha Ghe Tin T,0,None
+TablaPU/Sardha Rupak (10.5).wav,15,8.16,Tin Tin Ta Dhin Dha Ti Ti Kat Ti Dhin Dha Kat Ti Ki Ti,Tin Tin Ta Dhin Dha Ti Re Ki T Dhin Dha Ti Re Ki T,2,Pos6-9: Ti Ti Kat Ti→Ti Re Ki T; Pos12-15: Kat Ti Ki Ti→Ti Re Ki T
+TablaPU/Sasthi (6).wav,11,4.71,Dhin Dhin Dha Ghe Re Kat Kat Ki Dhin Na Ta,Dhin Dhin Dha Ghe Re Kat Kat Ki Dhin Na Ta,0,None
+TablaPU/Shiva Taal (9).wav,21,7.17,Dhin Dhin Dha Ghe Re Re Kat Kat Tun Na Na Tin Tun Dhin Dhin Dhin Ta Dhin Dhin Dhin Ta,Dhin Dhin Dha Ghe Ti Re Ki T Tun Na Na Tin Tun Dhin Dhin Dhin Ta Dhin Dhin Dhin Ta,1,Pos5-8: Re Re Kat Kat→Ti Re Ki T
+TablaPU/Soolfaak (10).wav,17,7.83,Dha Ti Ti Kat Ti Dhin Ta Ta Tin Tun Dha Dha Dha Tin Ta Ta Tin,Dha Ti Re Ki T Dhin Ta Ta Tin Tun Dha Dha Dha Tin Ta Ta Tin,1,Pos2-5: Ti Ti Kat Ti→Ti Re Ki T
+TablaPU/Sunand Taal (9.5).wav,19,7.49,Dhin Ki Ta Tin Dhin Kat Dhin Dhin Ta Tin Tin Kat Ta Tin Dhin Dha Dhin Dhin Dha,Dhin Ki Ta Tin Dhin Kat Dhin Dhin Ta Tin Tin Kat Ta Tin Dhin Dha Dhin Dhin Dha,0,None
+TablaPU/Teentaal (16).wav,16,12.31,Dha Dhin Dhin Dha Dha Dhin Dhin Dha Dha Tin Tin Ta Ta Dhin Dhin Dha,Dha Dhin Dhin Dha Dha Dhin Dhin Dha Dha Tin Tin Ta Ta Dhin Dhin Dha,0,None
+TablaPU/Tilwada (16).wav,24,12.47,Dha Re Kat Ki Ti Dhin Dhin Dha Dha Dha Tin Tin Ta Ti Ti Kat Ti Dhin Dhin Dha Dha Dha Dhin Dhin,Dha Ti Re Ki T Dhin Dhin Dha Dha Dha Tin Tin Ta Ti Re Ki T Dhin Dhin Dha Dha Dha Dhin Dhin,2,Pos2-5: Re Kat Ki Ti→Ti Re Ki T; Pos14-17: Ti Ti Kat Ti→Ti Re Ki T
+TablaPU/ektaal (12).wav,28,9.56,Dhin Re Dhin Re Dha Dha Dha Re Kat Ki Ki Tun Ta Ta Ta Tin Tun Dha Dha Dha Re Kat Ki Ki Dhin Dha Dha Dha,Dhin Re Dhin Re Dha Dha Dha Ti Re Ki T Tun Ta Ta Ta Tin Tun Dha Dha Dha Ti Re Ki T Dhin Dha Dha Dha,2,Pos8-11: Re Kat Ki Ki→Ti Re Ki T; Pos21-24: Re Kat Ki Ki→Ti Re Ki T

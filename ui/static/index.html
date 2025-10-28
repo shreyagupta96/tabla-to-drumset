@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla to Drum</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🎵 Percussion Classifier 🎵</h1>
+            <p class="subtitle">Upload your audio files and let AI classify your percussion instruments</p>
+            <div class="instruments-row">
+                <span class="instrument" style="--delay: 0">🥁</span>
+                <span class="instrument" style="--delay: 1">🪘</span>
+                <span class="instrument" style="--delay: 2">🎺</span>
+                <span class="instrument" style="--delay: 3">🎶</span>
+                <span class="instrument" style="--delay: 4">🎵</span>
+            </div>
+        </div>
+        
+        <div class="file-input-section">
+            <div class="input-method-tabs">
+                <button id="uploadTab" class="input-tab active" onclick="switchInputMethod('upload')">
+                    📁 Upload File
+                </button>
+                <button id="recordTab" class="input-tab" onclick="switchInputMethod('record')">
+                    🎤 Record Audio
+                </button>
+            </div>
+            
+            <!-- File Upload Section -->
+            <div id="uploadSection" class="input-section active">
+                <div class="file-input-wrapper">
+                    <input type="file" id="fileInput" accept="audio/*" multiple>
+                    <label for="fileInput" class="file-input-label">
+                        🎧 Choose Audio Files
+                    </label>
+                </div>
+                <div class="file-info" id="fileInfo" style="display: none;">
+                    <div class="file-details">
+                        <span id="fileName">No file selected</span>
+                        <span id="fileSize">0 KB</span>
+                    </div>
+                    <button id="clearFileBtn" class="clear-file-btn" onclick="clearCurrentFile()">
+                        🗑️ Clear File & Upload New
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Audio Recording Section -->
+            <div id="recordSection" class="input-section">
+                <div class="recording-controls">
+                    <button id="startRecordBtn" class="record-btn start" onclick="startRecording()">
+                        🎤 Start Recording
+                    </button>
+                    <button id="stopRecordBtn" class="record-btn stop" onclick="stopRecording()" disabled>
+                        ⏹️ Stop Recording
+                    </button>
+                    <button id="clearRecordBtn" class="record-btn clear" onclick="clearRecording()" disabled>
+                        🗑️ Clear Recording
+                    </button>
+                </div>
+                <div class="recording-info" id="recordingInfo" style="display: none;">
+                    <div class="recording-status">
+                        <span id="recordingStatus">Ready to record</span>
+                        <span id="recordingDuration">00:00</span>
+                    </div>
+                    <div class="recording-preview">
+                        <audio id="recordingPreview" controls style="width: 100%; margin-top: 10px;"></audio>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="submit-buttons">
+            <button class="submit-btn" id="classifyTablaBtn" data-api="classify" disabled>
+                🎵 Classify Tabla Notes
+            </button>
+            <button class="submit-btn" id="nextgenTablaBtn" data-api="nextgen" disabled>
+                🔮 Generate Next Tabla Notes
+            </button>
+            <button class="submit-btn" id="convertDrumsBtn" data-api="classify" disabled>
+                🥁 Convert Tabla to Drums
+            </button>
+            <button class="submit-btn" id="generateMusicBtn" data-api="nextgen" disabled>
+                🎶 Generate Music in Drums
+            </button>
+        </div>
+        
+        <div id="statusMessage" class="status-message" style="display: none;"></div>
+        
+        <div id="playbackInfo" class="playback-info" style="display: none;">
+            <h3>🎵 Now Playing</h3>
+            <div id="currentNote" class="current-note"></div>
+            <div id="playbackProgress" class="playback-progress">
+                <div id="progressBar" class="progress-bar"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

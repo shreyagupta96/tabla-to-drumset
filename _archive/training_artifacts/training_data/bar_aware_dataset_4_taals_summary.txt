@@ -1,0 +1,40 @@
+4-TAAL LSTM TRAINING DATASET SUMMARY
+================================================================================
+
+Total sequences: 248
+  Training: 188
+  Validation: 60
+
+Sequences by taal:
+  Teental (id=0): 105 sequences
+  Ektaal (id=1): 83 sequences
+  Jhaptaal (id=2): 18 sequences
+  Rupak (id=3): 42 sequences
+
+Format: 2-bar context → 1-bar target
+Features: note indices + duration bins
+Taal mapping: 0=Teental(16), 1=Ektaal(12), 2=Jhaptaal(10), 3=Rupak(7)
+
+TRAINING FILES:
+  - Basic Ektaal#03.wav
+  - Ektaal Dugun Variation#01.wav
+  - Ektaal Dugun#01.wav
+  - Ektaal Variation 1#01.wav
+  - Jhap Chougun#03.wav
+  - Jhap#01.wav
+  - Rupak Chougun#03.wav
+  - Rupak#01.wav
+  - Teental Chougun#01.wav
+  - Teental Dugun Variation 2#01.wav
+  - Teental Dugun Variation#02.wav
+  - Teental Dugun#01.wav
+  - Teental Variation 1#02.wav
+  - Teental Variation 2#03.wav
+  - Teental#02.wav
+
+VALIDATION FILES:
+  - Teental Variation 3#01.wav
+  - Teental Variation 3#02.wav
+  - Ektaal Variation 2#03.wav
+  - Jhap Dugun#01.wav
+  - Rupak#02.wav

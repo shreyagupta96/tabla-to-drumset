@@ -1,0 +1,61 @@
+File,Num_Notes,Duration(s),Note_Sequence,Duration_Sequence
+TablaLive/Ektaal_01.wav,21,9.20,Dhin Dhin Dha Ghe Ti Re Ki T Tin Ta Kat Tun T Dha Ghe Ti Re Ki T Dhin Na,0.74 0.74 0.40 0.39 0.17 0.21 0.17 0.24 0.81 0.79 0.76 0.62 0.18 0.42 0.38 0.17 0.19 0.21 0.24 0.78 0.58
+TablaLive/Ektaal_02.wav,20,9.39,Dhin Dhin Dha Ghe Re Re Ki T Tin Ta Tin Tun Dha Ghe Re Re Ki T Dhin Dha,0.05 0.79 0.74 0.44 0.37 0.18 0.21 0.17 0.24 0.80 0.79 0.75 0.75 0.43 0.39 0.17 0.21 0.18 0.22 0.78 0.73
+TablaLive/Ektaal_03.wav,20,9.22,Dhin Dhin Dha Ghe Ti Re Ki T Tin Ta T Tun Dha Ghe Dhin Re Dhin T Dhin Na,0.76 0.77 0.39 0.38 0.19 0.20 0.19 0.23 0.80 0.78 0.78 0.74 0.42 0.37 0.18 0.21 0.19 0.22 0.81 0.60
+TablaLive/Ektaal_04.wav,20,9.26,Dhin Dhin Dha Ghe Re Re Kat T Tin Ta Kat Tun Dha Ghe Ti Re Ki T Dhin Na,0.01 0.76 0.78 0.43 0.38 0.19 0.20 0.19 0.22 0.79 0.76 0.78 0.56 0.20 0.42 0.39 0.18 0.20 0.18 0.21 0.79 0.63
+TablaLive/Ektaal_05.wav,20,9.18,Dhin Dhin Dha Ghe Ti Re Ki T Tin Ta Dhin Tun Dha Ghe Re Re Kat T Dhin Na,0.78 0.75 0.43 0.40 0.18 0.20 0.17 0.22 0.79 0.79 0.79 0.53 0.19 0.42 0.39 0.18 0.22 0.17 0.23 0.77 0.57
+TablaLive/Ektaal_06.wav,20,9.24,Dhin Dhin Dha Ghe Ti Re Ki T Tin Ta Kat Tin Dha Ghe Re Re Kat T Dhin Na,0.76 0.78 0.43 0.39 0.18 0.22 0.18 0.23 0.79 0.78 0.77 0.56 0.20 0.40 0.38 0.18 0.21 0.18 0.22 0.82 0.56
+TablaLive/Ektaal_07.wav,22,10.22,Dhin Dhin Dha Ghe Ti Re Ki T Tin Ta Kat Tun T Dha Ghe Ti Re Ki T Dhin Dha Dhin,0.76 0.74 0.40 0.37 0.18 0.20 0.18 0.24 0.81 0.78 0.77 0.59 0.16 0.42 0.39 0.18 0.21 0.18 0.24 0.78 0.78 0.86
+TablaLive/Jhaptaal_1.wav,10,7.66,Dhin Na Dhin Dhin Ta Tin Ta Dhin Dhin Na,0.81 0.79 0.68 0.76 0.75 0.76 0.79 0.77 0.77 0.79
+TablaLive/Jhaptaal_2.wav,10,7.71,Dhin Na Dhin Dhin Ta Tin Ta Dhin Dhin Na,0.76 0.78 0.74 0.83 0.76 0.76 0.56 0.20 0.58 0.19 0.78 0.58 0.20
+TablaLive/Jhaptaal_3.wav,11,7.81,Dhin Na Dhin Dhin Na Tin Ta Dhin Dhin Ghe Na,0.02 0.81 0.77 0.75 0.78 0.78 0.75 0.60 0.19 0.78 0.13 0.66 0.81
+TablaLive/Jhaptaal_4.wav,10,7.70,Dhin Na Dhin Dhin Ta Tin Ta Dhin Dhin Na,0.75 0.60 0.19 0.59 0.19 0.78 0.74 0.81 0.60 0.18 0.75 0.82 0.72
+TablaLive/Jhaptaal_5.wav,10,7.65,Dhin Na Dhin Dhin Ta Tin Ta Dhin Dhin Na,0.75 0.75 0.77 0.79 0.77 0.78 0.63 0.19 0.77 0.78 0.69
+TablaLive/Jhaptaal_6.wav,10,7.60,Dhin Na Dhin Dhin Na Tin Ta Dhin Dhin Na,0.01 0.78 0.78 0.76 0.76 0.74 0.78 0.77 0.76 0.79 0.69
+TablaLive/Jhaptaal_7.wav,10,7.76,Dhin Na Dhin Dhin Na Tin Ta Dhin Dhin Na,0.07 0.77 0.77 0.77 0.79 0.75 0.77 0.77 0.79 0.78 0.58 0.17
+TablaLive/Jhaptaal_8.wav,11,8.50,Dhin Na Dhin Dhin Ta Tin Ta Dhin Dhin Na Dhin,0.01 0.79 0.76 0.76 0.77 0.76 0.77 0.76 0.79 0.80 0.78 0.77
+TablaLive/Rupak_01.wav,7,5.39,Tin Tin Ta Dhin Dha Dhin Ta,0.04 0.82 0.77 0.74 0.75 0.74 0.80 0.74
+TablaLive/Rupak_02.wav,7,5.43,Tin Tin Ta Dhin Na Dhin Na,0.02 0.82 0.76 0.76 0.80 0.54 0.22 0.77 0.74
+TablaLive/Rupak_03.wav,7,5.45,Tin Tin Ta Dhin Na Dhin Na,0.02 0.76 0.79 0.79 0.76 0.78 0.79 0.74 0.04
+TablaLive/Rupak_04.wav,7,5.36,Tin Tin Ta Dhin Na Dhin Na,0.01 0.71 0.77 0.75 0.80 0.80 0.78 0.74
+TablaLive/Rupak_05.wav,7,5.45,Tin Tin Ta Dhin Na Dhin Na,0.01 0.71 0.81 0.58 0.20 0.78 0.77 0.83 0.76
+TablaLive/Rupak_06.wav,7,5.33,Tin Tin Ta Dhin Na Dhin Na,0.01 0.73 0.77 0.80 0.71 0.75 0.80 0.76
+TablaLive/Rupak_07.wav,8,5.40,Tin Tin Ta Dhin Na T Dhin Na,0.01 0.73 0.82 0.78 0.79 0.54 0.22 0.77 0.74
+TablaLive/Rupak_08.wav,7,5.34,Tin Tin Ta Dhin Na Dhin Na,0.02 0.74 0.80 0.77 0.76 0.78 0.78 0.70
+TablaLive/Rupak_09.wav,7,5.35,Tin Tin Ta Dhin Na Dhin Na,0.02 0.76 0.77 0.78 0.77 0.77 0.77 0.72
+TablaLive/Rupak_10.wav,8,6.36,Tin Tin Ta Dhin Na Dhin Na Tin,0.03 0.77 0.80 0.59 0.21 0.80 0.75 0.82 0.77 0.83
+TablaPU/Ada Chautaal (14).wav,32,11.14,Dhin Ti Re Ki T Dhin Kat Ta Ta Tun Ta Ta Ta Tin Tun Ti Re Ki T Dhin Kat Ta Ta Dhin Dhin Dhin Dhin Dhin Dha Kat Dha Dha,0.75 0.20 0.20 0.21 0.20 0.60 0.20 0.39 0.40 0.77 0.38 0.22 0.20 0.77 0.78 0.20 0.20 0.21 0.22 0.58 0.20 0.40 0.39 0.58 0.21 0.39 0.21 0.20 0.30 0.12 0.21 0.21
+TablaPU/Addha Taal (16).wav,20,12.39,Dha Dhin Dhin Dha Dhin Dha Dhin Dhin Dha Dhin Dha Tin Ki Ta Tin Ta Dhin Dhin Dha T,1.12 0.76 0.40 0.39 0.39 1.15 0.77 0.39 0.39 0.40 1.14 0.77 0.39 0.40 0.38 1.15 0.77 0.40 0.39 0.40
+TablaPU/Ardha Jai Taal (6.5).wav,18,5.23,Dhin Dhin Dha Ghe Ti Re Ki T Dhin Ta Kat Tun Dhin Ta Dhin Dhin Dha Dha,0.37 0.39 0.22 0.19 0.11 0.12 0.13 0.12 0.38 0.39 0.40 0.39 0.39 0.39 0.40 0.38 0.21 0.22
+TablaPU/Ardha Shikhar taal (8.5).wav,15,6.67,Dhin Kat Ti Kat Ti Dhin Ta Tun Ta Ta Dhin Ta Dhin Dhin Ta,0.74 0.21 0.20 0.21 0.20 0.78 0.78 0.76 0.39 0.40 0.39 0.39 0.40 0.39 0.40
+TablaPU/Ashta Jhaptaal (8.5).wav,17,6.71,Dhin Ki Ta Tin Dhin Kat Dhin Dhin Ta Tin Tin Kat Ta Tin Dhin Dhin Dha,0.54 0.22 0.58 0.21 0.59 0.20 0.58 0.21 0.59 0.21 0.58 0.21 0.59 0.20 0.39 0.40 0.40
+TablaPU/Bhajani (8).wav,19,6.38,Dhin Ki Kat Ta Dhin Dhin Ta Tin Dhin Dhin Dhin Kat Ta Tin Tin Ta Dha Dhin Dhin,0.54 0.08 0.15 0.40 0.76 0.40 0.21 0.20 0.21 0.20 0.59 0.21 0.38 0.78 0.39 0.21 0.20 0.21 0.22
+TablaPU/Chachar (16).wav,21,12.45,Dha Kat Dhin Dhin Dha Tin Dha Dha Tin Ta Kat Tin Dha Tin Dha Dha Dhin Kat Kat Kat Ti,1.11 0.40 0.77 0.77 0.59 0.21 0.38 0.39 0.78 0.78 1.14 0.39 0.77 0.78 0.58 0.21 0.39 0.39 0.78 0.20 0.20 0.21 0.21
+TablaPU/Chartal-ki-Sawari (11).wav,21,8.65,Dhin Kat Ti Kat Ti Dhin Ta Tin Tun Ta Ta Tin Tun Dhin Dhin Dhin Ta Dha Dhin Dhin Ta,0.76 0.20 0.21 0.21 0.20 0.77 0.59 0.22 0.77 0.38 0.39 0.78 0.77 0.11 0.32 0.38 0.39 0.11 0.32 0.36 0.40
+TablaPU/Dadra (6).wav,8,4.61,Dha Dhin Ta Tin Dha Tin Ta Tin,0.75 0.77 0.38 0.39 0.77 0.76 0.38 0.41
+TablaPU/Dakshinatya Rupak (6).wav,11,4.66,Dha Dhin Kat Dhin Dhin Dha Dhin Kat Ta Ta T,0.73 0.39 0.39 0.10 0.69 0.76 0.39 0.39 0.39 0.38 0.03
+TablaPU/Deepchandi (14).wav,18,10.86,Dha Tin Dhin Dha Tin Dha Dha Tin Ta Ki Tin Dha Tin Dha Dha Dhin Dhin Dhin,0.55 0.21 1.51 0.58 0.22 0.39 0.38 1.52 0.59 0.21 1.51 0.59 0.21 0.39 0.39 0.77 0.39 0.41
+TablaPU/Firdost (14).wav,28,11.05,Dhin Dhin Dha Ghe Re Kat Kat Ki Tun Ta Kat Tun Dhin Dha Tin Tun Ti Re Ki T Dhin Dha Tin Dha Ti Re Ki T,0.76 0.78 0.39 0.38 0.22 0.20 0.20 0.22 0.77 0.76 0.78 0.79 0.38 0.38 0.39 0.37 0.20 0.21 0.20 0.21 0.38 0.40 0.39 0.39 0.21 0.21 0.20 0.22
+TablaPU/Gajamukha Taal (16).wav,22,12.44,Dhin Ti Re Ki T Dhin Dha Tun Ta Ta Tin Tun Ti Re Ki T Dhin Dha Dhin Dhin Na Ta,1.49 0.21 0.20 0.21 0.20 0.78 0.76 0.78 0.39 0.40 1.51 0.77 0.20 0.22 0.20 0.21 0.78 0.76 0.78 0.77 0.40 0.40
+TablaPU/Jai Taal (13).wav,21,10.17,Dhin Ti Re Ki T Dhin Ta Ti Re Ki T Dhin Ta Tun Ta Ta Dhin Dhin Dha Dha Re,0.73 0.22 0.20 0.21 0.20 0.78 1.51 0.21 0.20 0.21 0.20 0.78 0.77 0.77 0.40 0.39 0.77 0.77 0.39 0.21 0.23
+TablaPU/Jat Taal (8).wav,24,6.48,Dha Tin Dhin Dhin Dha T Dhin Dhin Dha Tin Ki Ta Tin Tin Kat Dha T Dhin Dhin Dha Dhin Ki Dhin Dhin,0.54 0.22 0.58 0.20 0.30 0.12 0.10 0.15 0.20 0.58 0.21 0.59 0.21 0.58 0.21 0.30 0.12 0.10 0.14 0.20 0.30 0.12 0.21 0.22
+TablaPU/Jhaptaal (10).wav,19,7.88,Dhin Dhin Na Tin Dhin Kat Dhin Ta Ta Tin Ki Ta Tin Dhin Dhin Dhin Ta Ta Tin,0.55 0.21 0.58 0.20 0.60 0.20 0.77 0.40 0.39 0.59 0.20 0.59 0.20 0.59 0.21 0.77 0.39 0.21 0.21
+TablaPU/Jhoomra (14).wav,40,11.31,Dhin Re Dhin Dha Ti Re Ki T Dhin Dhin Dhin Dhin Dha Kat Dha Ghe Ti Re Ki T Tin Ki Ta Ta Ti Re Ki T Dhin Kat Dhin Dhin Dha Kat Dha Ghe Ti Re Ki T,0.54 0.22 0.39 0.38 0.21 0.20 0.22 0.20 0.59 0.20 0.59 0.21 0.30 0.12 0.21 0.20 0.21 0.20 0.21 0.20 0.59 0.21 0.39 0.38 0.21 0.21 0.21 0.20 0.59 0.21 0.58 0.21 0.30 0.12 0.22 0.19 0.21 0.20 0.21 0.22
+TablaPU/Kalawati (9.5).wav,17,7.46,Dhin Kat Ti Kat Ti Dhin Ta Tin Tun Ta Ta Tin Tun Dhin Dhin Dhin Ta,0.75 0.20 0.20 0.21 0.20 0.78 0.58 0.21 0.77 0.39 0.40 0.77 0.78 0.10 0.31 0.39 0.42
+TablaPU/Keherva (8).wav,16,6.31,Dha Ghe Dha Tin Ta Ghe Dhin Ta Dha Ghe Dha Tin Ta Ghe Dhin Ta,0.37 0.38 0.39 0.39 0.40 0.38 0.40 0.39 0.40 0.39 0.38 0.39 0.42 0.38 0.39 0.40
+TablaPU/Matta Taal (9).wav,16,7.06,Dhin Kat Ti Kat Ti Dhin Ta Tun Ta Ta Dhin Dhin Dha Dhin Dhin Dha,0.75 0.20 0.20 0.21 0.20 0.78 0.78 0.76 0.39 0.40 0.39 0.39 0.40 0.39 0.38 0.41
+TablaPU/Moghuli (7).wav,8,5.36,Tin Ta Tin Dhin Dhin Ta Ta Tin,0.01 1.48 0.39 0.39 0.77 0.76 0.77 0.39 0.39
+TablaPU/Neel Taal (7.5).wav,18,5.98,Tin Ki Kat Tin Tin Ta Tin Dhin Dhin Ta Tin Tin Dhin Dha Dhin Dhin Dhin Dha,0.54 0.08 0.15 0.40 0.38 0.60 0.20 0.59 0.20 0.40 0.20 0.21 0.38 0.39 0.10 0.33 0.39 0.41
+TablaPU/Pancham Sawari Taal (15).wav,29,11.83,Dhin Dha Dhin Dhin Kat Dhin Dhin Dha Dhin Dhin Dha Tin Kat Tin Ta Ti Re Ki T Tun Na Kat Tun Dhin Dhin Dha Dhin Dhin Dha,0.75 0.76 0.39 0.40 0.77 0.40 0.38 0.39 0.40 0.39 0.39 0.59 0.20 0.39 0.39 0.21 0.21 0.20 0.21 0.39 0.40 0.39 0.38 0.39 0.40 0.39 0.39 0.40 0.40
+TablaPU/Pashto (7).wav,11,5.39,Tin Tin Ta T Ti Dhin Ta Tin Dhin Ta Tin,0.74 0.38 0.39 0.39 0.38 0.77 0.38 0.39 0.77 0.39 0.39
+TablaPU/Rudra Taal (11).wav,18,8.60,Dha T Dha Ti Re Ki T Dhin Ta Ti Re Ki T Tun Ta Ta Tin Tun,0.75 0.78 0.76 0.20 0.21 0.21 0.21 0.77 0.77 0.21 0.20 0.20 0.22 0.77 0.39 0.39 0.77 0.78
+TablaPU/Rupak (7).wav,10,5.37,Tin Tin Ta Tin Dhin Na T Dhin Na Tin,0.74 0.77 0.39 0.38 0.77 0.38 0.39 0.76 0.39 0.39
+TablaPU/Saatva (7).wav,7,5.31,Dha Ghe Kat Dha Ghe Tin T,0.73 0.77 0.77 0.77 0.76 0.76 0.77
+TablaPU/Sardha Rupak (10.5).wav,15,8.16,Tin Tin Ta Dhin Dha Ti Re Ki T Dhin Dha Ti Re Ki T,1.12 1.14 1.15 0.76 0.78 0.20 0.21 0.20 0.22 1.13 0.40 0.21 0.20 0.20 0.22
+TablaPU/Sasthi (6).wav,11,4.71,Dhin Dhin Dha Ghe Re Kat Kat Ki Dhin Na Ta,0.75 0.76 0.40 0.39 0.20 0.21 0.20 0.21 0.77 0.39 0.42
+TablaPU/Shiva Taal (9).wav,21,7.17,Dhin Dhin Dha Ghe Ti Re Ki T Tun Na Na Tin Tun Dhin Dhin Dhin Ta Dhin Dhin Dhin Ta,0.75 0.77 0.42 0.37 0.20 0.22 0.20 0.21 0.39 0.20 0.20 0.40 0.39 0.10 0.32 0.40 0.39 0.10 0.32 0.40 0.40
+TablaPU/Soolfaak (10).wav,17,7.83,Dha Ti Re Ki T Dhin Ta Ta Tin Tun Dha Dha Dha Tin Ta Ta Tin,0.75 0.20 0.20 0.21 0.20 0.78 0.39 0.40 0.77 0.77 0.77 0.40 0.39 0.77 0.39 0.21 0.21
+TablaPU/Sunand Taal (9.5).wav,19,7.49,Dhin Ki Ta Tin Dhin Kat Dhin Dhin Ta Tin Tin Kat Ta Tin Dhin Dha Dhin Dhin Dha,0.54 0.21 0.59 0.20 0.59 0.21 0.58 0.21 0.59 0.21 0.58 0.20 0.60 0.20 0.39 0.40 0.39 0.38 0.41
+TablaPU/Teentaal (16).wav,16,12.31,Dha Dhin Dhin Dha Dha Dhin Dhin Dha Dha Tin Tin Ta Ta Dhin Dhin Dha,0.74 0.78 0.77 0.77 0.78 0.76 0.78 0.78 0.76 0.78 0.77 0.78 0.77 0.77 0.78 0.77
+TablaPU/Tilwada (16).wav,24,12.47,Dha Ti Re Ki T Dhin Dhin Dha Dha Dha Tin Tin Ta Ti Re Ki T Dhin Dhin Dha Dha Dha Dhin Dhin,0.74 0.21 0.20 0.21 0.21 0.77 0.77 0.78 0.38 0.39 0.78 0.78 0.76 0.21 0.20 0.22 0.20 0.77 0.78 0.77 0.39 0.39 0.78 0.77
+TablaPU/ektaal (12).wav,28,9.56,Dhin Re Dhin Re Dha Dha Dha Ti Re Ki T Tun Ta Ta Ta Tin Tun Dha Dha Dha Ti Re Ki T Dhin Dha Dha Dha,0.54 0.21 0.59 0.20 0.39 0.22 0.20 0.21 0.20 0.20 0.21 0.78 0.38 0.21 0.21 0.77 0.78 0.39 0.20 0.20 0.21 0.21 0.21 0.20 0.78 0.39 0.20 0.22
