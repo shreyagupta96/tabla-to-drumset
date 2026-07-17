@@ -1,5 +1,7 @@
 # tabla-to-drumset
 
+## Dataset
 
-### Contributors
-⁠Tanmay Gupta ([15Tanmay15](https://github.com/15Tanmay15))
+The dataset used in this project is publicly available on Zenodo:
+
+**DOI:** 10.5281/zenodo.21410295
